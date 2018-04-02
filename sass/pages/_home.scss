@@ -1,0 +1,651 @@
+@font-face{
+font-family: 'LubalinGraphStdBook';
+src: url('../fonts/LubalinGraphStd-Book.otf');
+src: url('../fonts/LubalinGraphStd-Book.otf') format('opentype'),
+url('../fonts/LubalinGraphStd-Book.otf') format('opentype');
+font-weight: normal;
+font-style: normal;
+}
+
+::-moz-selection { color: white;  background: rgba(255, 68, 102, 0.63); }
+::selection      { color: white;  background: rgba(255, 68, 102, 0.63); }
+body::-webkit-scrollbar {
+    width: 0.8em;
+}
+
+body::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 6px 104px 66px rgb(0, 0, 0);
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: $rosa;
+    outline: #ff4466;
+    border-radius: 50px;
+}
+/*nav*/
+.navbar-inverse {
+    background-color: rgba(34,34,34, 0);
+    border-color: 1px white;
+}
+
+.navbar-inverse .navbar-nav > li > a {
+    color: white;
+    margin: 0px 6px;
+    &:hover{
+        color: $rosa;
+        background-color: transparent;
+        text-shadow: 4px 3px 4px gray;
+        font-weigth:bold;
+    }
+     &:focus{
+        color: $rosa;
+        background-color: transparent;
+    }
+}
+.navbar-brand{
+	display: none;
+	transition: all 0.8s ease-in-out;
+}
+#menu.active {
+    background-color: $rosa;
+    padding: 0px 0px 6px;
+    webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+    transform: translateY(0);
+    -webkit-transition: all 0s ease-in-out;
+    -moz-transition: all 0s ease-in-out;
+    transition: all 0.1s ease-in-out;
+    -webkit-transform: translateZ(0);
+    .navbar-brand{
+    	display: inherit;
+    	transition: all 0.8s ease-in-out;
+    }
+    ul{
+    	transform: translateX(0);
+    	transition: all 0.8s ease-in-out;
+    }
+}
+.nav > li > a:hover,
+.nav > li > a:focus {
+  text-decoration: none;
+
+}
+
+nav {
+	font-size: 1.4em;
+    a {
+        text-shadow: 4px 3px 4px black;
+        font-size: 0.9em;
+        color: white;
+        margin: 0% 3%;
+        font-family: $lubalin;
+        font-size: 18px;
+        &:hover{
+            color: #0DC0C0;
+        }
+    }
+}
+.navbar-collapse{
+	margin-top: 1em;
+
+}
+
+.navbar-brand{
+	img{
+		width:10em;
+	}
+}
+.op{
+	height: 50vh;
+}
+.navbar-nav{
+	transform: translateX(-10em);
+	transition: all 0.8s ease-in-out;
+}
+
+.item {
+    
+    .bg-1{
+    background: url("../images/carrusell/bg-1.jpg") no-repeat;
+    background-size: cover;
+    }
+    .bg-2{
+    background: url("../images/carrusell/bg-2.jpg") no-repeat;
+    background-size: cover;
+    }
+    .bg-3{
+    background: url("../images/carrusell/bg-3.jpg") no-repeat;
+    background-size: cover;
+    }
+    .bg-4{
+    background: url("../images/carrusell/bg-4.jpg") no-repeat;
+    background-size: cover;
+    }
+
+}
+.carousel-caption{
+    text-align: left !important;
+    top: 22%;
+    left:10% !important;
+
+    h1{
+        font-size:9rem;
+    }
+}
+/*principal*/
+.sanimate{
+    position:fixed;
+	text-align: center;
+    height: 100vh;
+    background: url("../images/sandra-azabache-fondo1.jpg") no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    .opacidad{
+        background: url("../images/pattern.svg") repeat scroll 0 0 rgba(0, 0, 0, 0.49);
+        width: 100%;
+        height: 100vh;
+    }
+    .canvas{
+        margin-top: 16em;
+        width: 35%;
+    }
+
+    .title{
+        font-family: "Montserrat";
+        color: white;
+        padding-left: 3%;
+        font-size: 1.5em;
+    }
+    .rs-icons{
+      padding-top: calc(100vh - 15em);
+      position: fixed;
+      z-index: 10;
+      right: 0px;
+        .icon {
+            text-align: center;
+            display: block;
+            width: 2em;
+            height: 2em;
+            border-radius: 50%;
+            line-height: 2em;
+            color: white;
+            font-size: 20px;
+            border: 1px solid transparent;
+            transition: all 0.3s ease-in-out;
+        }
+
+        .icon:hover{
+                border: 1px solid transparent;
+                background-color: #ff4466;
+                transition: all 0.3s ease-in-out;
+        }
+    }
+}
+
+p{
+	font-family: $lubalin;
+}
+
+.messages-1{
+    margin:7em;
+}
+
+
+
+.opi{
+    padding: 7% 0% 0%;
+    background-color: #FFFFFF;
+    .foto{
+        width: 100%;
+        border-radius: 100%;
+        height: 35em;
+        margin-top:8em;
+    }
+    h1{
+        font-family: $mons;
+        font-weight: 700;
+        text-align: center;
+        color: $rosa;
+    }
+    p{
+        text-align: center;
+        font-size: 17.5px;
+        color: #999999;
+    }
+    .texto{
+        text-align: center;
+        img{
+            width: 20%;
+            margin: 2px 2px;
+            display: inline-block;
+            padding: 11px;
+            &:nth-child(2){
+                margin-left: 9px;
+            }
+        }
+    }
+}
+#equipos{
+    padding:7% 0% 0%;
+    h1{
+        color:$rosa;
+    }
+    .box{
+        padding: 4em 0em;
+        background: #ffa700;
+        margin: 4em 0em 4em;
+        img{
+            max-width: 80%;
+        }
+        a{
+            color:$rosa;
+        }
+    }
+}
+#servicios{
+    padding:7% 0% 7%; 
+    .box{
+        img{
+            width:100%;
+        }
+        h3{
+          color:$rosa;  
+        }
+    }
+}
+
+.habilidades{
+    padding: 5% 0% 0%;
+    h1{
+        font-family: $mons;
+        font-weight: 700;
+        text-align: center;
+        color:$rosa;
+        padding: 20px 0px 45px;
+    }
+   .ds{
+        width: 100%;
+        height: 35em;
+    }
+    .gr{
+        background-image: url("../images/rueda1-01.svg");
+        background-repeat: no-repeat;
+        transition: all 0.5s ease-in-out;
+    }
+    .gr:hover{
+        background-image: url("../images/rueda2-02.svg");
+        background-repeat: no-repeat;
+        transition: all 0.5s ease-in-out;
+    }
+    .wb{
+        background-image: url("../images/rueda3-03.svg");
+        background-repeat: no-repeat;
+        transition: all 0.2s ease-in-out;
+    }
+    .wb:hover{
+        background-image: url("../images/rueda4-04.svg");
+        background-repeat: no-repeat;
+        transition: all 0.5s ease-in-out;
+    }
+    .gr, .gr:hover, .wb, .wb:hover{
+        background-size: 85%;
+        background-position-x: 20px;
+    }
+}
+
+
+.sobremip{
+    font-family: $mons;
+    font-size: 25px;
+    padding-top: 10px;
+    padding-bottom: 0;
+}
+.mistrabajos{
+    h1{
+        font-family: "Montserrat";
+        font-weight: 700;
+        text-align: center;
+        color: white;
+    }
+    .textit{
+        font-size: 17px;
+        color: white;
+    }
+}
+.cbp-l-grid-work-title {
+    color: $rosa !important;
+    font-family: $lubalin !important;
+}
+/*.habilidades{
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    height: 100%;
+}
+.habilidades:after{
+    top: 0;
+    display: block;
+    content: "";
+    position: absolute;
+    z-index: 1;
+    pointer-events: none;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    border-top: 194px solid #edbf32;
+    border-right: 3000px solid transparent;
+}
+*/
+
+.form{
+    position:relative;
+    input{
+    margin:0;
+    width:100%;
+
+    }
+    ::-webkit-input-placeholder {
+        color: white;
+    }
+    :-moz-placeholder { /* Firefox 18- */
+       color: white;  
+    }
+    ::-moz-placeholder {  /* Firefox 19+ */
+       color: white;  
+    }
+    :-ms-input-placeholder {  
+       color: white;  
+    }
+    span{
+        color: #fff;
+        font-size: 10px;
+        position: absolute;
+        right: 10px;
+        top: 6px;
+    }
+ }
+    
+.btnpost{
+    float: right;
+    display: flex;
+    justify-content: center;
+    span{
+        color:white;
+        font-size: 15px;
+        padding: 1.5rem 0.5rem;         
+    }
+    button{
+        color:black;
+        margin-top: 1rem;
+        border-radius:25px;
+        background: white;
+        font-weight: bold;
+        &:hover{
+
+            background: $rosa;
+            color:black;
+            
+        }
+    }
+
+}
+
+.text-mail{
+    background-image: url(../images/Contactos/info.svg);
+}
+.text-cel{
+    background-image: url(../images/Contactos/tel.svg);
+}
+.text-map{
+    background-image: url(../images/Contactos/mundo.svg);
+}
+.text-stree{
+    background-image: url(../images/Contactos/dir.svg);
+}
+
+.icon-contacto{
+    margin-top: 20px;
+    li{
+        padding-left: 40px;
+        line-height: 30px;
+        margin-bottom: 30px;
+        background-repeat: no-repeat;
+        a{
+            color:white;
+            font-size:1.5rem;
+
+            &:hover{
+                color:$rosa;
+            }
+        }
+
+    }
+    span{
+        color:white;
+        margin-left: 5rem;
+        font-size: 1.1rem;
+    }
+    .siguenos{
+        a{
+            display:inline-block;
+            width: 1rem;
+            height: 1rem;
+            margin-left: 1.5rem;
+            i{
+                color:white;
+                &:hover{
+                color:$rosa;
+                }
+            }
+
+        }
+
+
+    }
+
+}
+.mapa{
+    iframe{
+    width:100%;
+    }
+}
+
+
+//#00ffda;
+input{
+    color:$rosa;
+    font-size: 1.8rem!important;
+    border-bottom: 1px solid $rosa;
+}
+input:hover, input:focus{
+    border-bottom: 1px solid $rosa!important;
+}
+::-webkit-input-placeholder {
+   color: $plomo;
+    opacity:0.6;
+    font-size: 1.2rem ;
+}
+:-moz-placeholder { /* Firefox 18- */
+   color: $plomo;  
+}
+::-moz-placeholder {  /* Firefox 19+ */
+   color: $plomo;  
+}
+:-ms-input-placeholder {  
+   color: $plomo;  
+}
+
+
+footer{
+    background-color: $rosa;
+    padding: 1em 0em;
+    color: white;
+}
+
+.contacto{
+    background-color: black;
+    padding: 5em 0em;
+    h1{
+        font-family: "Montserrat";
+        font-weight: 700;
+        text-align: center;
+        color: white;
+    }
+    h3{
+        font-family: "Montserrat";
+        font-weight: 400;
+        text-align: center;
+        color: white;
+        line-height: 50px;
+    }
+    .contact{
+        color: #D2D2D2;
+        text-align: left;
+        font-size: 17px;
+        line-height: 30px;
+        span{
+            font-family: "Montserrat";
+            font-weight: 400;
+            text-align: center;
+            color: white;
+        }
+    }
+    span{
+        font-family: "Montserrat";
+    }
+    a{
+        color: #D2D2D2;
+        font-size: 17px;
+        line-height: 30px;
+        font-family: "Montserrat";
+        &:hover{
+            color: white;
+            text-decoration: none;
+        }
+    }
+    .fp{
+        padding-right: 15px;
+    }
+}
+.grid{
+        margin-top: 5px !important;
+}
+.mg-3{
+    margin-top: 4em;
+}
+
+footer{
+    a{
+       color: white;
+        font-size: 17px;
+        line-height: 30px;
+        font-family: "Montserrat";
+        &:hover{
+            color: white;
+            text-decoration: none;
+        }
+    }
+    .txt-al{
+        text-align: right;
+    }
+}
+
+
+.icon-view{
+    font-size: 1.5em;
+}
+.descrip-view{
+    font-size: 17px;
+    line-height: 2;
+    color: #8E8D8D;
+}
+.cbp-l-project-title{
+    color: $rosa !important;
+}
+.cbp-l-project-subtitle{
+    color: #8E8D8D !important;
+    font-family: $lubalin !important;
+}
+.viewmore{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    span{
+        font-size: 0.7em;
+        font-family: $mons;
+        padding-left: 10px;
+        line-height: 30px;
+    }
+    .btn-default:hover, .btn-default:focus, .btn-default:active, .btn-default:active:hover, .btn-default:active:focus, .btn-default:active.focus, .btn-default.active:hover, .btn-default.active:focus, .btn-default.active.focus, .open > .btn-default.dropdown-toggle:hover, .open > .btn-default.dropdown-toggle:focus, .open > .btn-default.dropdown-toggle.focus {
+        color: white;
+        background-color: $rosa;
+        border-color: $rosa;
+        transition: all 0.4s ease-in-out;
+    }
+    .btn-default {
+        color: $rosa;
+        background-color: white;
+        border-color: $rosa;
+        margin: 5em 0em;
+    }
+}
+.farriba{
+    text-decoration: none;
+}
+.farriba:active, .farriba:focus, .farriba:visited {
+    text-decoration: none;
+}
+.arriba{
+    color: white;
+    font-size: 20px;
+    background-color: $rosa;
+    border-radius: 50px;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+}
+.inline{
+    display: inline-block;
+}
+.pdr{
+    padding-right: 15px;
+}
+.cv1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .btn-default:hover, .btn-default:focus, .btn-default:active, .btn-default:active:hover, .btn-default:active:focus, .btn-default:active.focus, .btn-default.active:hover, .btn-default.active:focus, .btn-default.active.focus, .open > .btn-default.dropdown-toggle:hover, .open > .btn-default.dropdown-toggle:focus, .open > .btn-default.dropdown-toggle.focus {
+        color: white;
+        background-color: $rosa;
+        border-color: $rosa;
+        transition: all 0.4s ease-in-out;
+    }
+    .btn-default {
+        color: $rosa;
+        background-color: transparent;
+        border-color:$rosa;
+        margin: 3em 0em;
+        font-size: 1.2em;
+    }
+    span{
+        padding-left: 10px;
+    }
+}
+.cv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.version{
+    margin-left: 10px;
+}
+h6{
+    font-family: $mons;
+    font-size: 15px;
+}

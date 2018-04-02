@@ -1,0 +1,202 @@
+doctype
+html
+  head
+    meta(charset="utf-8")
+    meta(http-equiv="x-ua-compatible" content="ie=edge")
+    meta(name="viewport" content="width=device-width, initial-scale=1")
+    title Sandra Azabache | Portfolio
+    link(href="css/bootstrap.min.css" rel="stylesheet")
+    link(href="css/animations.min.css" rel="stylesheet")
+    link(href="css/animations-ie-fix.css" rel="stylesheet")
+    link(href="css/main.css" rel="stylesheet")
+    link(href="css/bg-perpective.min.css" rel="stylesheet")
+    link(href="css/cubeportfolio.min.css" rel="stylesheet")
+    link(href="css/hovereffects.css" rel="stylesheet")
+    link(href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" type="text/css")
+    link(href='https://fonts.googleapis.com/css?family=Sacramento' rel='stylesheet' type='text/css')
+    link(href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet" type="text/css")
+    link(href="../fonts/LubalinGraphStd-Book.otf")
+    link(href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css')
+    meta(name="description" content="Sandra Azabache - Portafolio")
+    meta(name="author" content="Sandra Azabache")
+    link(rel="icon" type="image/png" href="images/sicon.ico")
+  body(onload="init();")
+    include heading.jade
+    #inicio.sanimate
+      .opacidad.animatedParent.diagonal
+        canvas.animated.fadeIn.slower(id="canvas" width="900" height="500" style="background-color: rgba(210, 210, 210, 0)")
+        .subtitle.animatedParent
+          h3.title.animated.fadeIn.slowest  Web Designer & Front-end Developer
+        .rs-icons.animatedParent
+          a(href="https://www.facebook.com/sandramar02" target="_blank")
+            .icon.animated.fadeInUpShort
+              i.fa.fa-facebook
+          a(href="https://twitter.com/sandramar_02" target="_blank")
+            .icon.animated.fadeInUpShort
+              i.fa.fa-twitter
+          a(href="https://pe.linkedin.com/in/sandramar02" target="_blank")
+            .icon.animated.fadeInUpShort
+              i.fa.fa-linkedin
+          a(href="https://www.behance.net/sandramar02" target="_blank")
+            .icon.animated.fadeInUpShort
+              i.fa.fa-behance
+          a(href="https://github.com/sazabache" target="_blank")
+            .icon.animated.fadeInUpShort
+              i.fa.fa-github
+    #sobremi.opi
+      .container
+        .col-md-5.col-sm-6.col-xs-12
+          img.foto(src="images/sandra-azabache-foto1.jpg")
+
+        .col-md-7.col-sm-6.col-xs-12.texto
+          .desc
+            h1.sobremi A little bit of me
+            p.sobremip I am...
+            .letrero
+              b
+                span1. 
+                  front-end developer <br>
+                  communicator <br>
+                  designer <br>
+                  voiceover announcer <br>
+                  marketer
+            img.icono(src="images/icon-design-03.svg")
+            img.icono(src="images/icon-code-02.svg")
+            img.icono(src="images/icon-com-01.svg")
+            p Designer from the heart, web developer by passion and communicator by vocation. I love technology and how it evolves. When I use it I feel that I have the power to communicate anything in whatever of its expressions.
+    #mistrabajos.mistrabajos
+      .container
+        .masthead.segment
+          .ui.page.grid
+            .column
+              .introduction
+                h1.ui.inverted.header
+                    span.text My Projects
+                    p.textit These are some of the landing pages that I did in Laboratoria.
+                .row
+                  .grid(style="max-width: 980px; width: 97%; margin: 100px auto;")
+                    #js-filters-awesome-work.cbp-l-filters-work
+                      .cbp-filter-item.cbp-filter-item-active(data-filter='*') TODOS
+                      .cbp-filter-item(data-filter='.html') HTML & CSS
+                        .cbp-filter-counter
+                      .cbp-filter-item(data-filter='.jade') Jade & Sass
+                        .cbp-filter-counter
+                      .cbp-filter-item(data-filter='.js') Javascript
+                        .cbp-filter-counter
+                      .cbp-filter-item(data-filter='.dsg') Designs
+                        .cbp-filter-counter
+                    #js-grid-awesome-work.cbp.cbp-l-grid-work
+                      .cbp-item.html
+                            .cbp-item-wrapper
+                              a.cbp-caption.cbp-singlePage(href='http://sazabache.github.io/project1/', rel='nofollow')
+                                .cbp-caption-defaultWrap
+                                  img.wdt(src='images/escueladanza-01.png', alt='')
+                                .cbp-caption-activeWrap
+                              .cbp-l-grid-work-title Escuela de Danza
+                              .cbp-l-grid-work-desc First week at Laboratoria.
+                      .cbp-item.html
+                        .cbp-item-wrapper
+                          a.cbp-caption.cbp-singlePage(href='http://sazabache.github.io/project2/', rel='nofollow')
+                            .cbp-caption-defaultWrap
+                              img.wdt(src='images/sentient-02.png', alt='')
+                            .cbp-caption-activeWrap
+                          .cbp-l-grid-work-title Sentient
+                          .cbp-l-grid-work-desc Hackaton of Laboratoria. First place.
+                      .cbp-item.html
+                        .cbp-item-wrapper
+                          a.cbp-caption.cbp-singlePage(href='http://sazabache.github.io/project3/', rel='nofollow')
+                            .cbp-caption-defaultWrap
+                              img.wdt(src='images/primes-03.png', alt='')
+                            .cbp-caption-activeWrap
+                          .cbp-l-grid-work-title Primes
+                          .cbp-l-grid-work-desc Second Unid - Laboratoria.
+                      .cbp-item.html
+                        .cbp-item-wrapper
+                          a.cbp-caption.cbp-singlePage(href='http://sazabache.github.io/project4/', rel='nofollow')
+                            .cbp-caption-defaultWrap
+                              img.wdt(src='images/flat-04.png', alt='')
+                            .cbp-caption-activeWrap
+                          .cbp-l-grid-work-title Flat theme
+                          .cbp-l-grid-work-desc Project of Laboratoria (Second week of March).
+                      .cbp-item.jade
+                        .cbp-item-wrapper
+                          a.cbp-caption.cbp-singlePage(href='http://sazabache.github.io/project5/', rel='nofollow')
+                            .cbp-caption-defaultWrap
+                              img.wdt(src='images/agency-05.png', alt='')
+                            .cbp-caption-activeWrap
+                          .cbp-l-grid-work-title Agency Theme
+                          .cbp-l-grid-work-desc Project of Laboratoria (Last week of March).
+                      .cbp-item.jade
+                        .cbp-item-wrapper
+                          a.cbp-caption.cbp-singlePage(href='http://sazabache.github.io/project6/', rel='nofollow')
+                            .cbp-caption-defaultWrap
+                              img.wdt(src='images/republica-06.png', alt='')
+                            .cbp-caption-activeWrap
+                          .cbp-l-grid-work-title La Republica
+                          .cbp-l-grid-work-desc Laboratoria evaluation in teams. Collaborative project.
+                    #js-loadMore-awesome-work.cbp-l-loadMore-button
+                      a.cbp-l-loadMore-link(href='http://sazabache.github.io/load/' rel="nofollow")
+                        span.cbp-l-loadMore-defaultText MORE PROJECTS
+                        span.cbp-l-loadMore-loadingText LOADING...
+                        span.cbp-l-loadMore-noMoreLoading MORE PROJECTS SOON
+                .ui.hidden.divider        
+    #habilidades.habilidades
+      .container
+        h1.hab My skills
+        .col-md-6.col-sm-6.col-xs-12.animatedParent
+          .ds.gr.animated.rotateIn
+        .col-md-6.col-sm-6.col-xs-12.animatedParent
+          .ds.wb.animated.rotateIn
+    #contacto.contacto
+      .container
+        h1 Contact me
+        .col-md-6
+          h3 ¡You arrive here! ¡Congratulations!
+          p.contact If you are interested in mi work, in my skills or in the technologies that I know. ¡I am the person you are searching for! 
+          p.contact ¿Are you ready to start a conversation? 
+          p.contact Just choose the media... 
+              span And let's get in touch.
+
+        .col-md-6.mg-3
+          .row.text-center
+            a(href="#")
+                .fa.fa-whatsapp.fp
+                span +51 957544480 <br>
+            a(href="")
+                .fa.fa-skype.fp
+                span sandramar_02
+          .row.text-center
+            a(href="") sazabache.github.io/Portafolio <br>
+            a(href="mailto:sandra.azabachevillegas@gmail.com") sandra.azabachevillegas@gmail.com
+          .row.text-center
+            a(href="https://www.facebook.com/sandramar02" target="_blank")
+              .fa.fa-facebook.fp
+            a(href="https://pe.linkedin.com/in/sandramar02" target="_blank")
+              .fa.fa-linkedin.fp
+            a(href="https://www.behance.net/sandramar02" target="_blank")
+              .fa.fa-behance.fp
+            a(href="https://github.com/sazabache" target="_blank")
+              .fa.fa-github.fp
+            a(href="https://plus.google.com/u/0/109348762659589067279" target="_blank")
+              .fa.fa-google-plus.fp
+      .text-center.cv1.animatedParent
+        a.animated.fadeInDownShort(href="docs/azabache.pdf" target="_blank")
+          button.btn.btn-default.vw(type="button")
+            i.fa.fa-download
+              span Download my CV
+      .text-center.cv.animatedParent
+        a.farriba(href="#")
+          .arriba
+            i.fa.fa-angle-double-up 
+            span <br> Up
+    include footer.jade
+  script(src='js/jquery.js')
+  script(src='js/css3-animate-it.js')
+  script(src='js/bootstrap.min.js')
+  script(src='https://code.createjs.com/createjs-2015.11.26.min.js')
+  script(src='js/Sin_20título_202.js')
+  script(src='js/jquery.cubeportfolio.min.js')
+  script(src='js/main.js')
+  script(src='js/menu-scroll.js')
+  script(src='js/final.js')
+  
