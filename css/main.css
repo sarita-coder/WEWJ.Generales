@@ -14,6 +14,9 @@
 .mg-3em {
   margin-top: 2em; }
 
+p {
+  font-family: "Montserrat" !important; }
+
 @font-face {
   font-family: 'LubalinGraphStdBook';
   src: url("../fonts/LubalinGraphStd-Book.otf");
@@ -205,14 +208,15 @@ p {
     width: 100%;
     border-radius: 100%;
     height: 35em;
-    margin-top: 8em; }
+    margin-top: 8.6em;
+    padding-right: 2.5em; }
   .opi h1 {
     font-family: "Montserrat";
     font-weight: 700;
     text-align: center;
     color: #01c1f7; }
   .opi p {
-    text-align: center;
+    text-align: justify;
     font-size: 17.5px;
     color: #999999; }
   .opi .texto {
