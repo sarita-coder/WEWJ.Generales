@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Sandra Azabache | Portfolio</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/animations.min.css" rel="stylesheet">
+    <link href="css/animations-ie-fix.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+    <link href="css/bg-perpective.min.css" rel="stylesheet">
+    <link href="css/cubeportfolio.min.css" rel="stylesheet">
+    <link href="css/hovereffects.css" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Sacramento" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet" type="text/css">
+    <link href="../fonts/LubalinGraphStd-Book.otf">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+    <meta name="description" content="Sandra Azabache - Portafolio">
+    <meta name="author" content="Sandra Azabache">
+    <link rel="icon" type="image/png" href="images/sicon.ico">
+  </head>
+  <body onload="init();">
+    <header>
+      <nav class="navbar navbar-inverse navbar-fixed-top" id="menu">
+        <div class="container padd">
+          <div class="navbar-header">
+            <button class="navbar-toggle" data-toggle="collapse" data-target="#collapse" type="button"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+            <div class="navbar-brand"><a class="animatedParent" href="#inicio"><img class="animated fadeInDownShort logotype" src="images/mainlogo-04.svg"></a></div>
+          </div>
+          <div class="collapse navbar-collapse" id="collapse">
+            <ul class="nav navbar-nav navbar-right">
+              <li><a class="sec hvr-bounce-to-right" href="#sobremi">About me</a></li>
+              <li><a class="sec1 hvr-bounce-to-right" href="#mistrabajos">My Projects</a></li>
+              <li><a class="sec2 hvr-bounce-to-right" href="#habilidades">My skills</a></li>
+              <li><a class="sec3 hvr-bounce-to-right" href="#contacto">Contact me</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <div class="sanimate" id="inicio">
+      <div class="opacidad animatedParent diagonal">
+        <canvas class="animated fadeIn slower" id="canvas" width="900" height="500" style="background-color: rgba(210, 210, 210, 0)"></canvas>
+        <div class="subtitle animatedParent">
+          <h3 class="title animated fadeIn slowest"> Web Designer & Front-end Developer</h3>
+        </div>
+        <div class="rs-icons animatedParent"><a href="https://www.facebook.com/sandramar02" target="_blank">
+            <div class="icon animated fadeInUpShort"><i class="fa fa-facebook"></i></div></a><a href="https://twitter.com/sandramar_02" target="_blank">
+            <div class="icon animated fadeInUpShort"><i class="fa fa-twitter"></i></div></a><a href="https://pe.linkedin.com/in/sandramar02" target="_blank">
+            <div class="icon animated fadeInUpShort"><i class="fa fa-linkedin"></i></div></a><a href="https://www.behance.net/sandramar02" target="_blank">
+            <div class="icon animated fadeInUpShort"><i class="fa fa-behance"></i></div></a><a href="https://github.com/sazabache" target="_blank">
+            <div class="icon animated fadeInUpShort"><i class="fa fa-github"></i></div></a></div>
+      </div>
+    </div>
+    <div class="opi" id="sobremi">
+      <div class="container">
+        <div class="col-md-5 col-sm-6 col-xs-12"><img class="foto" src="images/sandra-azabache-foto1.jpg"></div>
+        <div class="col-md-7 col-sm-6 col-xs-12 texto">
+          <div class="desc">
+            <h1 class="sobremi">A little bit of me</h1>
+            <p class="sobremip">I am...</p>
+            <div class="letrero"><b>
+                <span1>
+                  front-end developer <br>
+                  communicator <br>
+                  designer <br>
+                  voiceover announcer <br>
+                  marketer
+                </span1></b></div><img class="icono" src="images/icon-design-03.svg"><img class="icono" src="images/icon-code-02.svg"><img class="icono" src="images/icon-com-01.svg">
+            <p>Designer from the heart, web developer by passion and communicator by vocation. I love technology and how it evolves. When I use it I feel that I have the power to communicate anything in whatever of its expressions.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="mistrabajos" id="mistrabajos">
+      <div class="container">
+        <div class="masthead segment">
+          <div class="ui page grid">
+            <div class="column">
+              <div class="introduction">
+                <h1 class="ui inverted header"><span class="text">My Projects</span>
+                  <p class="textit">These are some of the landing pages that I did in Laboratoria.</p>
+                </h1>
+                <div class="row">
+                  <div class="grid" style="max-width: 980px; width: 97%; margin: 100px auto;">
+                    <div class="cbp-l-filters-work" id="js-filters-awesome-work">
+                      <div class="cbp-filter-item cbp-filter-item-active" data-filter="*">TODOS</div>
+                      <div class="cbp-filter-item" data-filter=".html">HTML & CSS
+                        <div class="cbp-filter-counter"></div>
+                      </div>
+                      <div class="cbp-filter-item" data-filter=".jade">Jade & Sass
+                        <div class="cbp-filter-counter"></div>
+                      </div>
+                      <div class="cbp-filter-item" data-filter=".js">Javascript
+                        <div class="cbp-filter-counter"></div>
+                      </div>
+                      <div class="cbp-filter-item" data-filter=".dsg">Designs
+                        <div class="cbp-filter-counter"></div>
+                      </div>
+                    </div>
+                    <div class="cbp cbp-l-grid-work" id="js-grid-awesome-work">
+                      <div class="cbp-item html">
+                        <div class="cbp-item-wrapper"><a class="cbp-caption cbp-singlePage" href="http://sazabache.github.io/project1/" rel="nofollow">
+                            <div class="cbp-caption-defaultWrap"><img class="wdt" src="images/escueladanza-01.png" alt=""></div>
+                            <div class="cbp-caption-activeWrap"></div></a>
+                          <div class="cbp-l-grid-work-title">Escuela de Danza</div>
+                          <div class="cbp-l-grid-work-desc">First week at Laboratoria.</div>
+                        </div>
+                      </div>
+                      <div class="cbp-item html">
+                        <div class="cbp-item-wrapper"><a class="cbp-caption cbp-singlePage" href="http://sazabache.github.io/project2/" rel="nofollow">
+                            <div class="cbp-caption-defaultWrap"><img class="wdt" src="images/sentient-02.png" alt=""></div>
+                            <div class="cbp-caption-activeWrap"></div></a>
+                          <div class="cbp-l-grid-work-title">Sentient</div>
+                          <div class="cbp-l-grid-work-desc">Hackaton of Laboratoria. First place.</div>
+                        </div>
+                      </div>
+                      <div class="cbp-item html">
+                        <div class="cbp-item-wrapper"><a class="cbp-caption cbp-singlePage" href="http://sazabache.github.io/project3/" rel="nofollow">
+                            <div class="cbp-caption-defaultWrap"><img class="wdt" src="images/primes-03.png" alt=""></div>
+                            <div class="cbp-caption-activeWrap"></div></a>
+                          <div class="cbp-l-grid-work-title">Primes</div>
+                          <div class="cbp-l-grid-work-desc">Second Unid - Laboratoria.</div>
+                        </div>
+                      </div>
+                      <div class="cbp-item html">
+                        <div class="cbp-item-wrapper"><a class="cbp-caption cbp-singlePage" href="http://sazabache.github.io/project4/" rel="nofollow">
+                            <div class="cbp-caption-defaultWrap"><img class="wdt" src="images/flat-04.png" alt=""></div>
+                            <div class="cbp-caption-activeWrap"></div></a>
+                          <div class="cbp-l-grid-work-title">Flat theme</div>
+                          <div class="cbp-l-grid-work-desc">Project of Laboratoria (Second week of March).</div>
+                        </div>
+                      </div>
+                      <div class="cbp-item jade">
+                        <div class="cbp-item-wrapper"><a class="cbp-caption cbp-singlePage" href="http://sazabache.github.io/project5/" rel="nofollow">
+                            <div class="cbp-caption-defaultWrap"><img class="wdt" src="images/agency-05.png" alt=""></div>
+                            <div class="cbp-caption-activeWrap"></div></a>
+                          <div class="cbp-l-grid-work-title">Agency Theme</div>
+                          <div class="cbp-l-grid-work-desc">Project of Laboratoria (Last week of March).</div>
+                        </div>
+                      </div>
+                      <div class="cbp-item jade">
+                        <div class="cbp-item-wrapper"><a class="cbp-caption cbp-singlePage" href="http://sazabache.github.io/project6/" rel="nofollow">
+                            <div class="cbp-caption-defaultWrap"><img class="wdt" src="images/republica-06.png" alt=""></div>
+                            <div class="cbp-caption-activeWrap"></div></a>
+                          <div class="cbp-l-grid-work-title">La Republica</div>
+                          <div class="cbp-l-grid-work-desc">Laboratoria evaluation in teams. Collaborative project.</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="cbp-l-loadMore-button" id="js-loadMore-awesome-work"><a class="cbp-l-loadMore-link" href="http://sazabache.github.io/load/" rel="nofollow"><span class="cbp-l-loadMore-defaultText">MORE PROJECTS</span><span class="cbp-l-loadMore-loadingText">LOADING...</span><span class="cbp-l-loadMore-noMoreLoading">MORE PROJECTS SOON</span></a></div>
+                  </div>
+                </div>
+                <div class="ui hidden divider">       </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="habilidades" id="habilidades">
+      <div class="container">
+        <h1 class="hab">My skills</h1>
+        <div class="col-md-6 col-sm-6 col-xs-12 animatedParent">
+          <div class="ds gr animated rotateIn"></div>
+        </div>
+        <div class="col-md-6 col-sm-6 col-xs-12 animatedParent">
+          <div class="ds wb animated rotateIn"></div>
+        </div>
+      </div>
+    </div>
+    <div class="contacto" id="contacto">
+      <div class="container">
+        <h1>Contact me</h1>
+        <div class="col-md-6">
+          <h3>¡You arrive here! ¡Congratulations!</h3>
+          <p class="contact">If you are interested in mi work, in my skills or in the technologies that I know. ¡I am the person you are searching for! </p>
+          <p class="contact">¿Are you ready to start a conversation? </p>
+          <p class="contact">Just choose the media... <span>And let's get in touch.</span></p>
+        </div>
+        <div class="col-md-6 mg-3">
+          <div class="row text-center"><a href="#">
+              <div class="fa fa-whatsapp fp"></div><span>+51 957544480 <br></span></a><a href="">
+              <div class="fa fa-skype fp"></div><span>sandramar_02</span></a></div>
+          <div class="row text-center"><a href="">sazabache.github.io/Portafolio <br></a><a href="mailto:sandra.azabachevillegas@gmail.com">sandra.azabachevillegas@gmail.com</a></div>
+          <div class="row text-center"><a href="https://www.facebook.com/sandramar02" target="_blank">
+              <div class="fa fa-facebook fp"></div></a><a href="https://pe.linkedin.com/in/sandramar02" target="_blank">
+              <div class="fa fa-linkedin fp"></div></a><a href="https://www.behance.net/sandramar02" target="_blank">
+              <div class="fa fa-behance fp"></div></a><a href="https://github.com/sazabache" target="_blank">
+              <div class="fa fa-github fp"></div></a><a href="https://plus.google.com/u/0/109348762659589067279" target="_blank">
+              <div class="fa fa-google-plus fp"></div></a></div>
+        </div>
+      </div>
+      <div class="text-center cv1 animatedParent"><a class="animated fadeInDownShort" href="docs/azabache.pdf" target="_blank">
+          <button class="btn btn-default vw" type="button"><i class="fa fa-download"><span>Download my CV</span></i></button></a></div>
+      <div class="text-center cv animatedParent"><a class="farriba" href="#">
+          <div class="arriba"><i class="fa fa-angle-double-up"> </i><span><br> Up</span></div></a></div>
+    </div>
+    <footer>
+      <div class="container">
+        <div class="col-md-3">
+          <h6>Román © - 2018</h6>
+        </div>
+        <div class="col-md-6 text-center"><a class="version" href="index.html">Español</a><a class="version" href="index.html">English</a></div>
+        <div class="col-md-3 txt-al"><a href="https://www.facebook.com/JEWJ-Contratistas-Generales-125853971269546/" target="_blank">
+            <div class="fa fa-facebook fa-2x"></div></a><a href="https://www.linkedin.com/in/jorge-luis-ca%C3%B1azaca-vargas-14159a136/" target="_blank">
+            <div class="fa fa-linkedin fa-2x"></div></a><a href="https://plus.google.com/u/0/114423434853652120809" target="_blank">
+            <div class="fa fa-google-plus fa-2x"></div></a><a href="https://www.youtube.com/channel/UCu-11MpnfKN1_ZDU8EKQStA?disable_polymer=true" target="_blank">
+            <div class="fa fa-youtube-play fa-2x"></div></a></div>
+      </div>
+    </footer>
+  </body>
+  <script src="js/jquery.js"></script>
+  <script src="js/css3-animate-it.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="https://code.createjs.com/createjs-2015.11.26.min.js"></script>
+  <script src="js/Sin_20título_202.js"></script>
+  <script src="js/jquery.cubeportfolio.min.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/menu-scroll.js"></script>
+  <script src="js/final.js"></script>
+</html>

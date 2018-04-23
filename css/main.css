@@ -8,6 +8,9 @@
 .t_size-14 {
   font-size: 2em; }
 
+.t_size-12 {
+  font-size: 1.9em; }
+
 .title-h1 {
   color: #ffbe00; }
 
@@ -62,9 +65,9 @@ body::-webkit-scrollbar-thumb {
 
 .navbar-brand {
   display: none;
-  -webkit-transition: all 0.8s ease-in-out;
-  -o-transition: all 0.8s ease-in-out;
-  transition: all 0.8s ease-in-out; }
+  -webkit-transition: all 1.8s ease-in-out;
+  -o-transition: all 1.8s ease-in-out;
+  transition: all 1.8s ease-in-out; }
 
 #menu.active {
   background-color: #01c1f7;
@@ -75,9 +78,8 @@ body::-webkit-scrollbar-thumb {
   -o-transform: translateY(0);
   -webkit-transform: translateY(0);
   transform: translateY(0);
-  -webkit-transition: all 0s ease-in-out;
-  -moz-transition: all 0s ease-in-out;
   -webkit-transition: all 0.1s ease-in-out;
+  -moz-transition: all 0.1s ease-in-out;
   -o-transition: all 0.1s ease-in-out;
   transition: all 0.1s ease-in-out;
   -webkit-transform: translateZ(0); }
@@ -241,52 +243,64 @@ p {
       max-width: 80%; }
     #equipos .box a {
       color: #01c1f7; }
+    #equipos .box .modal-title {
+      WIDTH: calc(100% - 35px);
+      display: inline-block; }
+    #equipos .box .btn-primary:hover {
+      background: #01c1f7; }
 
 #servicios {
   padding: 7% 0% 7%; }
   #servicios .box img {
-    width: 100%; }
+    width: 100%;
+    height: 8em; }
   #servicios .box h3 {
     color: #01c1f7; }
+  #servicios p {
+    text-align: justify; }
 
-.habilidades {
-  padding: 5% 0% 0%; }
-  .habilidades h1 {
-    font-family: "Montserrat";
-    font-weight: 700;
-    text-align: center;
-    color: #01c1f7;
-    padding: 20px 0px 45px; }
-  .habilidades .ds {
-    width: 100%;
-    height: 35em; }
-  .habilidades .gr {
-    background-image: url("../images/rueda1-01.svg");
-    background-repeat: no-repeat;
-    -webkit-transition: all 0.5s ease-in-out;
-    -o-transition: all 0.5s ease-in-out;
-    transition: all 0.5s ease-in-out; }
-  .habilidades .gr:hover {
-    background-image: url("../images/rueda2-02.svg");
-    background-repeat: no-repeat;
-    -webkit-transition: all 0.5s ease-in-out;
-    -o-transition: all 0.5s ease-in-out;
-    transition: all 0.5s ease-in-out; }
-  .habilidades .wb {
-    background-image: url("../images/rueda3-03.svg");
-    background-repeat: no-repeat;
-    -webkit-transition: all 0.2s ease-in-out;
-    -o-transition: all 0.2s ease-in-out;
-    transition: all 0.2s ease-in-out; }
-  .habilidades .wb:hover {
-    background-image: url("../images/rueda4-04.svg");
-    background-repeat: no-repeat;
-    -webkit-transition: all 0.5s ease-in-out;
-    -o-transition: all 0.5s ease-in-out;
-    transition: all 0.5s ease-in-out; }
-  .habilidades .gr, .habilidades .gr:hover, .habilidades .wb, .habilidades .wb:hover {
-    background-size: 85%;
-    background-position-x: 20px; }
+.habilidades h1 {
+  font-family: "Montserrat";
+  font-weight: 700;
+  text-align: center;
+  color: #01c1f7;
+  padding: 20px 0px 45px; }
+
+.habilidades .ds {
+  width: 100%;
+  height: 35em; }
+
+.habilidades .gr {
+  background-image: url("../images/rueda1-01.svg");
+  background-repeat: no-repeat;
+  -webkit-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out; }
+
+.habilidades .gr:hover {
+  background-image: url("../images/rueda2-02.svg");
+  background-repeat: no-repeat;
+  -webkit-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out; }
+
+.habilidades .wb {
+  background-image: url("../images/rueda3-03.svg");
+  background-repeat: no-repeat;
+  -webkit-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out; }
+
+.habilidades .wb:hover {
+  background-image: url("../images/rueda4-04.svg");
+  background-repeat: no-repeat;
+  -webkit-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out; }
+
+.habilidades .gr, .habilidades .gr:hover, .habilidades .wb, .habilidades .wb:hover {
+  background-size: 85%;
+  background-position-x: 20px; }
 
 .sobremip {
   font-family: "Montserrat";
@@ -406,7 +420,7 @@ p {
     font-size: 1.1rem; }
   .icon-contacto .siguenos a {
     display: inline-block;
-    width: 1rem;
+    width: 2.5rem;
     height: 1rem;
     margin-left: 1.5rem; }
     .icon-contacto .siguenos a i {
@@ -490,6 +504,7 @@ footer {
   margin-top: 4em; }
 
 footer a {
+  PADDING: 0% 2%;
   color: white;
   font-size: 17px;
   line-height: 30px;

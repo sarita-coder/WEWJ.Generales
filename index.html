@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>JE&WJ CONTRATISTAS GENERALES E.I.R.L.</title>
     <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href="css/animations.min.css" rel="stylesheet">
     <link href="css/animations-ie-fix.css" rel="stylesheet">
     <link href="css/bg-perpective.min.css" rel="stylesheet">
@@ -21,9 +22,9 @@
     <meta name="author" content="Sarita Román Colonio">
     <link rel="icon" type="image/png" href="images/logo/logotipo.png">
   </head>
-  <body>
+  <body data-spy="scroll" data-target=".navbar" data-offset="50">
     <header>
-      <nav class="navbar navbar-inverse navbar-fixed-top" id="menu">
+      <nav class="navbar navbar-inverse navbar-fixed-top" id="menu" role="navigation">
         <div class="container padd">
           <div class="navbar-header">
             <button class="navbar-toggle" data-toggle="collapse" data-target="#collapse" type="button"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
@@ -31,11 +32,11 @@
           </div>
           <div class="collapse navbar-collapse" id="collapse">
             <ul class="nav navbar-nav navbar-right">
-              <li><a class="sec hvr-bounce-to-right" href="#sobremi">NOSOTROS</a></li>
+              <li class="active hidden"><a href=""></a></li>
+              <li> <a class="sec hvr-bounce-to-right" href="#sobremi">NOSOTROS</a></li>
               <li><a class="sec1 hvr-bounce-to-right" href="#equipos">EQUIPOS</a></li>
               <li><a class="sec2 hvr-bounce-to-right" href="#servicios">SERVICIOS</a></li>
               <li><a class="sec3 hvr-bounce-to-right" href="#mistrabajos">GALERIA</a></li>
-              <li><a class="sec4 hvr-bounce-to-right" href="#habilidades">IDENTIDAD</a></li>
               <li><a class="sec5 hvr-bounce-to-right" href="#contacto">CONTACTO</a></li>
             </ul>
           </div>
@@ -82,7 +83,7 @@
       <div class="container">
         <div class="col-md-12 col-sm-12 col-xs-12">
           <div class="messages-1 text"><img src="images/logo/logo.png">
-            <P class="text t_size-14"> <span class="q-marks t_size-14">"</span>Las decisiones más eficaces se toman en base a datos precisos.<span class="q-marks t_size-14">"</span></P>
+            <P class="text t_size-12"> <span class="q-marks t_size-12">"</span>Las decisiones más eficaces se toman en base a datos precisos.<span class="q-marks t_size-14">"</span></P>
           </div>
         </div>
       </div>
@@ -97,13 +98,13 @@
         <div class="col-md-5 col-sm-6 col-xs-12 texto">
           <div class="desc">
             <h1 class="sobremi">¿Quienes somos?</h1>
-            <p class="sobremip">Somos ...</p>
+            <p class="sobremip">Un equipo ...</p>
             <div class="letrero"><b>
                 <span1>
-                  Innovación <br>
-                  Compromiso <br>
-                  Eficiencia <br>
-                  Profesionalismo <br>
+                  Comprometido <br>
+                  Innovador <br>
+                  Eficiente <br>
+                  Profesional <br>
                   Calidad
                   
                 </span1></b></div>
@@ -116,23 +117,119 @@
       <div class="container text">
         <h1 class="sobremi">Nuestros Equipos</h1>
         <div class="col-md-3 col-sm-6 col-xs-12">
-          <div class="box"><img src="images/Equipos/EQTOPOGRAFICO.png">
-            <h4>Estación Fotogramétrica</h4><a>Ver Más(+)</a>
+          <div class="box"><img src="images/Equipos/EQTOPOGRAFICO.jpg">
+            <h4>Estación Fotogramétrica</h4>
+            <button class="btn btn-primary" type="button" data-toggle="modal" data-target="#exampleModalLong1">Ver Más(+)</button>
+            <div class="modal fade" id="exampleModalLong1" tabindex="-1" role="dialog" aria-labelledby="#exampleModalLongTitle" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">Estación Fotogramétrica</h5>
+                    <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                  </div>
+                  <div class="modal-body">
+                    <div class="container-fluid">
+                      <div class="row">
+                        <div class="col-md-12"><img src="images/Equipos/EQTOPOGRAFICO.jpg"></div>
+                        <div class="col-md-12">
+                          <p>La estacion fotogrametrica esta basada en un computador Intel-compatible, bajo el sistema operativo Windows 98/NT/2000/XP. El Software da soporte a los modos de video 1024x768xHiColor hasta 1600x1200xTrueColor y mas.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="modal-footer">
+                    <button class="btn btn-primary" type="button" data-dismiss="modal">Salir</button>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
         <div class="col-md-3 col-sm-6 col-xs-12">
           <div class="box"><img src="images/Equipos/EQGEODESICO.png">
-            <h4>Equipamiento Geodésico</h4><a>Ver Más(+)</a>
+            <h4>Equipamiento Geodésico</h4>
+            <button class="btn btn-primary" type="button" data-toggle="modal" data-target="#exampleModalLong2">Ver Más(+)</button>
+            <div class="modal fade" id="exampleModalLong2" tabindex="-1" role="dialog" aria-labelledby="#exampleModalLongTitle" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">Equipamiento Geodésico</h5>
+                    <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                  </div>
+                  <div class="modal-body">
+                    <div class="container-fluid">
+                      <div class="row">
+                        <div class="col-md-12"><img src="images/Equipos/EQGEODESICO.png"></div>
+                        <div class="col-md-12">
+                          <p>GEOMINING S.A.C. cuenta con equipos GPS diferencial de las marcas Trimble, modelo R6 y Leica, modelo Viva y System 900, para servicios en modo estático, en tiempo real y cinemático, con alta precisión, contamos con certificados de calibración, así también respetamos las Normas Técnicas del Instituto Geográfico Nacional para trabajos de alta precisión garantizando el 100% de certificación de todos nuestros puntos geodésicos rastreados.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="modal-footer">
+                    <button class="btn btn-primary" type="button" data-dismiss="modal">Salir</button>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
         <div class="col-md-3 col-sm-6 col-xs-12">
           <div class="box"><img src="images/Equipos/EQDRONE.png">
-            <h4>Equipamiento Drones</h4><a>Ver Más(+)</a>
+            <h4>Equipamiento Drones</h4>
+            <button class="btn btn-primary" type="button" data-toggle="modal" data-target="#exampleModalLong3">Ver Más(+)</button>
+            <div class="modal fade" id="exampleModalLong3" tabindex="-1" role="dialog" aria-labelledby="#exampleModalLongTitle" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">Equipamiento Drones</h5>
+                    <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                  </div>
+                  <div class="modal-body">
+                    <div class="container-fluid">
+                      <div class="row">
+                        <div class="col-md-12"><img src="images/Equipos/EQDRONE.png"></div>
+                        <div class="col-md-12">
+                          <p>GEOMINING S.A.C. cuenta con equipos GPS diferencial de las marcas Trimble, modelo R6 y Leica, modelo Viva y System 900, para servicios en modo estático, en tiempo real y cinemático, con alta precisión, contamos con certificados de calibración, así también respetamos las Normas Técnicas del Instituto Geográfico Nacional para trabajos de alta precisión garantizando el 100% de certificación de todos nuestros puntos geodésicos rastreados.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="modal-footer">
+                    <button class="btn btn-primary" type="button" data-dismiss="modal">Salir</button>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
         <div class="col-md-3 col-sm-6 col-xs-12">
           <div class="box"><img src="images/Equipos/EQPOSTPROCESO.png">
-            <h4>Equip. Post - Proceso</h4><a>Ver Más(+)</a>
+            <h4>Equip. Post - Proceso</h4>
+            <button class="btn btn-primary" type="button" data-toggle="modal" data-target="#exampleModalLong4">Ver Más(+)</button>
+            <div class="modal fade" id="exampleModalLong4" tabindex="-1" role="dialog" aria-labelledby="#exampleModalLongTitle" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">Equip. Post - Proceso</h5>
+                    <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                  </div>
+                  <div class="modal-body">
+                    <div class="container-fluid">
+                      <div class="row">
+                        <div class="col-md-12"><img src="images/Equipos/EQPOSTPROCESO.png"></div>
+                        <div class="col-md-12">
+                          <p>GEOMINING S.A.C. cuenta con equipos GPS diferencial de las marcas Trimble, modelo R6 y Leica, modelo Viva y System 900, para servicios en modo estático, en tiempo real y cinemático, con alta precisión, contamos con certificados de calibración, así también respetamos las Normas Técnicas del Instituto Geográfico Nacional para trabajos de alta precisión garantizando el 100% de certificación de todos nuestros puntos geodésicos rastreados.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="modal-footer">
+                    <button class="btn btn-primary" type="button" data-dismiss="modal">Salir</button>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -171,66 +268,88 @@
                   <div class="grid" style="max-width: 980px; width: 97%; margin: 100px auto;">
                     <div class="cbp-l-filters-work" id="js-filters-awesome-work">
                       <div class="cbp-filter-item cbp-filter-item-active" data-filter="*">TODOS</div>
-                      <div class="cbp-filter-item" data-filter=".html">Topografia
+                      <div class="cbp-filter-item" data-filter=".carto">Cartografia
                         <div class="cbp-filter-counter"></div>
                       </div>
-                      <div class="cbp-filter-item" data-filter=".jade">Mineria
+                      <div class="cbp-filter-item" data-filter=".topo">Topografía
                         <div class="cbp-filter-counter"></div>
                       </div>
-                      <div class="cbp-filter-item" data-filter=".js">Catastro
+                      <div class="cbp-filter-item" data-filter=".foto">Fotogrametria
                         <div class="cbp-filter-counter"></div>
                       </div>
-                      <div class="cbp-filter-item" data-filter=".dsg">Diseños
+                      <div class="cbp-filter-item" data-filter=".social">Social
+                        <div class="cbp-filter-counter"></div>
+                      </div>
+                      <div class="cbp-filter-item" data-filter=".inter">Internacional
+                        <div class="cbp-filter-counter"></div>
+                      </div>
+                      <div class="cbp-filter-item" data-filter=".integ">Intergración
                         <div class="cbp-filter-counter"></div>
                       </div>
                     </div>
                     <div class="cbp cbp-l-grid-work" id="js-grid-awesome-work">
-                      <div class="cbp-item html">
-                        <div class="cbp-item-wrapper"><a class="cbp-caption cbp-singlePage" href="https://sarita-coder.github.io/project8/" rel="nofollow">
+                      <div class="cbp-item foto">
+                        <div class="cbp-item-wrapper"><a class="cbp-caption cbp-singlePage" href="https://sarita-coder.github.io/project1/" rel="nofollow">
                             <div class="cbp-caption-defaultWrap"><img class="wdt" src="images/Galerias/project1.jpg" alt=""></div>
                             <div class="cbp-caption-activeWrap"></div></a>
-                          <div class="cbp-l-grid-work-title">Costa Verde</div>
-                          <div class="cbp-l-grid-work-desc">Primera semana.</div>
+                          <div class="cbp-l-grid-work-title">Cesel Ingenieros</div>
+                          <div class="cbp-l-grid-work-desc">Tramo Tuberia de Gas.</div>
                         </div>
                       </div>
-                      <div class="cbp-item html">
-                        <div class="cbp-item-wrapper"><a class="cbp-caption cbp-singlePage" href="https://sarita-coder.github.io/project8/" rel="nofollow">
-                            <div class="cbp-caption-defaultWrap"><img class="wdt" src="images/Galerias/project1.jpg" alt=""></div>
+                      <div class="cbp-item topo">
+                        <div class="cbp-item-wrapper"><a class="cbp-caption cbp-singlePage" href="https://sarita-coder.github.io/project2/" rel="nofollow">
+                            <div class="cbp-caption-defaultWrap"><img class="wdt" src="images/Galerias/project2.jpg" alt=""></div>
                             <div class="cbp-caption-activeWrap"></div></a>
-                          <div class="cbp-l-grid-work-title">Sentient</div>
-                          <div class="cbp-l-grid-work-desc">Hackaton.</div>
+                          <div class="cbp-l-grid-work-title">Villa El Salvador</div>
+                          <div class="cbp-l-grid-work-desc">Proyecto Arquitectura.</div>
                         </div>
                       </div>
-                      <div class="cbp-item html">
-                        <div class="cbp-item-wrapper"><a class="cbp-caption cbp-singlePage" href="https://sarita-coder.github.io/project8/" rel="nofollow">
-                            <div class="cbp-caption-defaultWrap"><img class="wdt" src="images/Galerias/project1.jpg" alt=""></div>
+                      <div class="cbp-item social">
+                        <div class="cbp-item-wrapper"><a class="cbp-caption cbp-singlePage" href="https://sarita-coder.github.io/project3/" rel="nofollow">
+                            <div class="cbp-caption-defaultWrap"><img class="wdt" src="images/Galerias/project3.jpg" alt=""></div>
                             <div class="cbp-caption-activeWrap"></div></a>
-                          <div class="cbp-l-grid-work-title">Primes</div>
-                          <div class="cbp-l-grid-work-desc">Segunda unidad.</div>
+                          <div class="cbp-l-grid-work-title">Navidad 2016</div>
+                          <div class="cbp-l-grid-work-desc">Ventanilla.</div>
                         </div>
                       </div>
-                      <div class="cbp-item html">
+                      <div class="cbp-item foto">
                         <div class="cbp-item-wrapper"><a class="cbp-caption cbp-singlePage" href="https://sarita-coder.github.io/project8/" rel="nofollow">
-                            <div class="cbp-caption-defaultWrap"><img class="wdt" src="images/Galerias/project1.jpg" alt=""></div>
+                            <div class="cbp-caption-defaultWrap"><img class="wdt" src="images/Galerias/project4.jpg" alt=""></div>
                             <div class="cbp-caption-activeWrap"></div></a>
-                          <div class="cbp-l-grid-work-title">Flat theme</div>
-                          <div class="cbp-l-grid-work-desc">Proyecto (Segunda semana de Marzo).</div>
+                          <div class="cbp-l-grid-work-title">Electro Perú</div>
+                          <div class="cbp-l-grid-work-desc">Represa Tablachaca.</div>
                         </div>
                       </div>
-                      <div class="cbp-item jade">
+                      <div class="cbp-item inter">
                         <div class="cbp-item-wrapper"><a class="cbp-caption cbp-singlePage" href="https://sarita-coder.github.io/project8/" rel="nofollow">
-                            <div class="cbp-caption-defaultWrap"><img class="wdt" src="images/Galerias/project1.jpg" alt=""></div>
+                            <div class="cbp-caption-defaultWrap"><img class="wdt" src="images/Galerias/project5.jpg" alt=""></div>
                             <div class="cbp-caption-activeWrap"></div></a>
-                          <div class="cbp-l-grid-work-title">Agency Theme</div>
-                          <div class="cbp-l-grid-work-desc">Proyecto  (Última semana de Marzo).</div>
+                          <div class="cbp-l-grid-work-title">Commercial UAV Expo - 2017</div>
+                          <div class="cbp-l-grid-work-desc">Las Vegas - EEUU.</div>
                         </div>
                       </div>
-                      <div class="cbp-item jade">
+                      <div class="cbp-item topo">
                         <div class="cbp-item-wrapper"><a class="cbp-caption cbp-singlePage" href="https://sarita-coder.github.io/project8/" rel="nofollow">
-                            <div class="cbp-caption-defaultWrap"><img class="wdt" src="images/Galerias/project1.jpg" alt=""></div>
+                            <div class="cbp-caption-defaultWrap"><img class="wdt" src="images/Galerias/project6.jpg" alt=""></div>
                             <div class="cbp-caption-activeWrap"></div></a>
-                          <div class="cbp-l-grid-work-title">La República</div>
-                          <div class="cbp-l-grid-work-desc">Proyecto colaborativo.</div>
+                          <div class="cbp-l-grid-work-title">Ennel Perú</div>
+                          <div class="cbp-l-grid-work-desc">Red de Gas.</div>
+                        </div>
+                      </div>
+                      <div class="cbp-item carto">
+                        <div class="cbp-item-wrapper"><a class="cbp-caption cbp-singlePage" href="https://sarita-coder.github.io/project8/" rel="nofollow">
+                            <div class="cbp-caption-defaultWrap"><img class="wdt" src="images/Galerias/project7.jpg" alt=""></div>
+                            <div class="cbp-caption-activeWrap"></div></a>
+                          <div class="cbp-l-grid-work-title">Calidda</div>
+                          <div class="cbp-l-grid-work-desc">Cartografia de Presición.</div>
+                        </div>
+                      </div>
+                      <div class="cbp-item integ">
+                        <div class="cbp-item-wrapper"><a class="cbp-caption cbp-singlePage" href="https://sarita-coder.github.io/project8/" rel="nofollow">
+                            <div class="cbp-caption-defaultWrap"><img class="wdt" src="images/Galerias/project9.jpg" alt=""></div>
+                            <div class="cbp-caption-activeWrap"></div></a>
+                          <div class="cbp-l-grid-work-title">Equipo de Trabajo</div>
+                          <div class="cbp-l-grid-work-desc">Año Nuevo - 2016.</div>
                         </div>
                       </div>
                     </div>
@@ -245,15 +364,7 @@
       </div>
     </div>
     <div class="habilidades" id="habilidades">
-      <div class="container">
-        <h1 class="hab">Nuestra Identidad</h1>
-        <div class="col-md-6 col-sm-6 col-xs-12 animatedParent">
-          <div class="ds gr animated rotateIn"></div>
-        </div>
-        <div class="col-md-6 col-sm-6 col-xs-12 animatedParent">
-          <div class="ds wb animated rotateIn"></div>
-        </div>
-      </div>
+      <div class="container"></div>
     </div>
     <div class="contacto" id="contacto">
       <div class="container">
@@ -264,7 +375,7 @@
             <li class="text-cel"><a href="#!">(+51 721 6755)</a></li>
             <li class="text-map"><a href="#!">http://www.we&wj.com</a></li>
             <li class="text-stree"><a href="#!">Av. los Olivos Mza. a Lote. 7 Asoc Villa el Amauta, SMP, Lima 31,Perú.</a></li>
-            <div class="siguenos"><span>Síguenos en: <i class="fa fa-facebook fa-2x fp"></i></span><a href="#!"><i class="fa fa-linkedin fa-2x fp"></i></a><a href="#!"><i class="fa fa-youtube-play fa-2x fp"></i></a><a href="https://plus.google.com/u/0/109348762659589067279" target="_blank"><i class="fa fa-google-plus fp"></i></a></div>
+            <div class="siguenos"><span>Síguenos en: </span><a href="https://www.facebook.com/JEWJ-Contratistas-Generales-125853971269546/"><i class="fa fa-facebook fa-2x fp"></i></a><a href="https://www.linkedin.com/in/jorge-luis-ca%C3%B1azaca-vargas-14159a136/"><i class="fa fa-linkedin fa-2x fp"></i></a><a href="https://www.youtube.com/channel/UCu-11MpnfKN1_ZDU8EKQStA?disable_polymer=true"><i class="fa fa-youtube-play fa-2x fp"></i></a><a href="https://plus.google.com/u/0/114423434853652120809" target="_blank"><i class="fa fa-google-plus fa-2x fp"></i></a></div>
           </ul>
         </div>
         <div class="col-md-6 mg-3em">
@@ -307,19 +418,18 @@
     <footer>
       <div class="container">
         <div class="col-md-3">
-          <h6>Sarita Román © - 2016</h6>
+          <h6>Román © - 2018</h6>
         </div>
         <div class="col-md-6 text-center"><a class="version" href="index.html">Español</a><a class="version" href="index.html">English</a></div>
-        <div class="col-md-3 txt-al"><a href="https://www.facebook.com/sandramar02" target="_blank">
-            <div class="fa fa-facebook"></div></a><a href="https://pe.linkedin.com/in/sandramar02" target="_blank">
-            <div class="fa fa-linkedin"></div></a><a href="https://www.behance.net/sandramar02" target="_blank">
-            <div class="fa fa-behance"></div></a><a href="https://github.com/sazabache" target="_blank">
-            <div class="fa fa-github"></div></a><a href="https://plus.google.com/u/0/109348762659589067279" target="_blank">
-            <div class="fa fa-google-plus"></div></a></div>
+        <div class="col-md-3 txt-al"><a href="https://www.facebook.com/JEWJ-Contratistas-Generales-125853971269546/" target="_blank">
+            <div class="fa fa-facebook fa-2x"></div></a><a href="https://www.linkedin.com/in/jorge-luis-ca%C3%B1azaca-vargas-14159a136/" target="_blank">
+            <div class="fa fa-linkedin fa-2x"></div></a><a href="https://plus.google.com/u/0/114423434853652120809" target="_blank">
+            <div class="fa fa-google-plus fa-2x"></div></a><a href="https://www.youtube.com/channel/UCu-11MpnfKN1_ZDU8EKQStA?disable_polymer=true" target="_blank">
+            <div class="fa fa-youtube-play fa-2x"></div></a></div>
       </div>
     </footer>
   </body>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
   <script src="js/css3-animate-it.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <script src="https://code.createjs.com/createjs-2015.11.26.min.js"></script>

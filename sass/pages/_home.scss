@@ -44,9 +44,10 @@ body::-webkit-scrollbar-thumb {
 }
 .navbar-brand{
 	display: none;
-	transition: all 0.8s ease-in-out;
+	transition: all 1.8s ease-in-out;
 }
 #menu.active {
+
     background-color: $rosa;
     padding: 0px 0px 6px;
     webkit-transform: translateY(0);
@@ -54,8 +55,8 @@ body::-webkit-scrollbar-thumb {
     -ms-transform: translateY(0);
     -o-transform: translateY(0);
     transform: translateY(0);
-    -webkit-transition: all 0s ease-in-out;
-    -moz-transition: all 0s ease-in-out;
+    -webkit-transition: all 0.1s ease-in-out;
+    -moz-transition: all 0.1s ease-in-out;
     transition: all 0.1s ease-in-out;
     -webkit-transform: translateZ(0);
     .navbar-brand{
@@ -104,6 +105,8 @@ nav {
 	transform: translateX(-10em);
 	transition: all 0.8s ease-in-out;
 }
+
+
 
 .item {
     
@@ -243,6 +246,13 @@ p{
         a{
             color:$rosa;
         }
+        .modal-title{
+            WIDTH: calc(100% - 35px);
+            display: inline-block;
+        }
+        .btn-primary:hover{
+             background:$rosa;
+        }
     }
 }
 #servicios{
@@ -250,15 +260,18 @@ p{
     .box{
         img{
             width:100%;
+            height:8em;
         }
         h3{
           color:$rosa;  
         }
     }
+    p{
+        text-align: justify;
+    }
 }
 
 .habilidades{
-    padding: 5% 0% 0%;
     h1{
         font-family: $mons;
         font-weight: 700;
@@ -435,7 +448,7 @@ p{
     .siguenos{
         a{
             display:inline-block;
-            width: 1rem;
+            width: 2.5rem;
             height: 1rem;
             margin-left: 1.5rem;
             i{
@@ -543,7 +556,8 @@ footer{
 
 footer{
     a{
-       color: white;
+        PADDING: 0% 2%;
+        color: white;
         font-size: 17px;
         line-height: 30px;
         font-family: "Montserrat";

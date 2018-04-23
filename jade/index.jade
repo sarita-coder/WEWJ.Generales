@@ -6,6 +6,7 @@ html
 		meta(name="viewport" content="width=device-width, initial-scale=1")
 		title JE&WJ CONTRATISTAS GENERALES E.I.R.L.
 		link(href="css/bootstrap.min.css" rel="stylesheet")
+		link(href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" type="text/css")
 		link(href="css/animations.min.css" rel="stylesheet")
 		link(href="css/animations-ie-fix.css" rel="stylesheet")
 		link(href="css/bg-perpective.min.css" rel="stylesheet")
@@ -20,7 +21,7 @@ html
 		meta(name="description" content="JE & WJ, JEWJ")
 		meta(name="author" content="Sarita Román Colonio")
 		link(rel="icon" type="image/png" href="images/logo/logotipo.png")
-	body
+	body(data-spy="scroll" data-target=".navbar" data-offset="50")
 		include head.jade
 		#inicio.Hero
 			#myCarousel.carousel.slide(data-ride="carousel")
@@ -60,8 +61,8 @@ html
 				.col-md-12.col-sm-12.col-xs-12
 					.messages-1.text
 						img(src="images/logo/logo.png")
-						P.text.t_size-14 
-							span.q-marks.t_size-14 "
+						P.text.t_size-12 
+							span.q-marks.t_size-12 "
 							| Las decisiones más eficaces se toman en base a datos precisos.
 							span.q-marks.t_size-14 "
 
@@ -74,14 +75,14 @@ html
 				.col-md-5.col-sm-6.col-xs-12.texto
 					.desc
 						h1.sobremi ¿Quienes somos?
-						p.sobremip Somos ...
+						p.sobremip Un equipo ...
 						.letrero
 							b
-								span1. 
-									Innovación <br>
-									Compromiso <br>
-									Eficiencia <br>
-									Profesionalismo <br>
+								span1.
+									Comprometido <br>
+									Innovador <br>
+									Eficiente <br>
+									Profesional <br>
 									Calidad
 						
 						p JE&WJ somos una empresa que proporciona servicios en Sistemas de Información Geográfica con innovación tecnológica y desarrollo del personal. Realizamos servicios de levantamiento topográfico a través de Vuelos Aéreos no Tripulados (RPAS). Creemos que nuestra principal virtud lo constituye nuestro equipo humano, formado por Ingenieros, Técnicos en Cartografia y otros personales técnico especializados, todos garantizan la calidad del servicio que ofrecemos, siendo esto uno de los principales motivos de nuestro crecimiento en los últimos años.
@@ -94,30 +95,105 @@ html
 				h1.sobremi Nuestros Equipos
 				.col-md-3.col-sm-6.col-xs-12
 					.box
-						img(src="images/Equipos/EQTOPOGRAFICO.png")
+						img(src="images/Equipos/EQTOPOGRAFICO.jpg")
 						h4 Estación Fotogramétrica
-						a Ver Más(+)
+						button(type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong1") Ver Más(+)
+
+						#exampleModalLong1.modal.fade(tabindex="-1" role="dialog" aria-labelledby="#exampleModalLongTitle" aria-hidden="true")
+							.modal-dialog.modal-dialog-centered(role="document")
+								.modal-content
+									.modal-header
+										h5#exampleModalLongTitle.modal-title Estación Fotogramétrica
+										button.close(type="button" data-dismiss="modal" aria-label="Close")
+											span(aria-hidden="true") &times;
+									.modal-body
+										.container-fluid
+											.row
+												.col-md-12
+													img(src="images/Equipos/EQTOPOGRAFICO.jpg")
+												.col-md-12
+													p La estacion fotogrametrica esta basada en un computador Intel-compatible, bajo el sistema operativo Windows 98/NT/2000/XP. El Software da soporte a los modos de video 1024x768xHiColor hasta 1600x1200xTrueColor y mas.
+									.modal-footer
+										button.btn.btn-primary(type="button"  data-dismiss="modal") Salir
+									
+
+
 				.col-md-3.col-sm-6.col-xs-12
 					.box
 						img(src="images/Equipos/EQGEODESICO.png")
 						h4 Equipamiento Geodésico
-						a Ver Más(+)
+						button(type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong2") Ver Más(+)
+
+						#exampleModalLong2.modal.fade(tabindex="-1" role="dialog" aria-labelledby="#exampleModalLongTitle" aria-hidden="true")
+							.modal-dialog.modal-dialog-centered(role="document")
+								.modal-content
+									.modal-header
+										h5#exampleModalLongTitle.modal-title Equipamiento Geodésico
+										button.close(type="button" data-dismiss="modal" aria-label="Close")
+											span(aria-hidden="true") &times;
+									.modal-body
+										.container-fluid
+											.row
+												.col-md-12
+													img(src="images/Equipos/EQGEODESICO.png")
+												.col-md-12
+													p GEOMINING S.A.C. cuenta con equipos GPS diferencial de las marcas Trimble, modelo R6 y Leica, modelo Viva y System 900, para servicios en modo estático, en tiempo real y cinemático, con alta precisión, contamos con certificados de calibración, así también respetamos las Normas Técnicas del Instituto Geográfico Nacional para trabajos de alta precisión garantizando el 100% de certificación de todos nuestros puntos geodésicos rastreados.
+									.modal-footer
+										button.btn.btn-primary(type="button"  data-dismiss="modal") Salir
+
 				.col-md-3.col-sm-6.col-xs-12
 					.box
 						img(src="images/Equipos/EQDRONE.png")
 						h4 Equipamiento Drones
-						a Ver Más(+)
+						button(type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong3") Ver Más(+)
+
+						#exampleModalLong3.modal.fade(tabindex="-1" role="dialog" aria-labelledby="#exampleModalLongTitle" aria-hidden="true")
+							.modal-dialog.modal-dialog-centered(role="document")
+								.modal-content
+									.modal-header
+										h5#exampleModalLongTitle.modal-title Equipamiento Drones
+										button.close(type="button" data-dismiss="modal" aria-label="Close")
+											span(aria-hidden="true") &times;
+									.modal-body
+										.container-fluid
+											.row
+												.col-md-12
+													img(src="images/Equipos/EQDRONE.png")
+												.col-md-12
+													p GEOMINING S.A.C. cuenta con equipos GPS diferencial de las marcas Trimble, modelo R6 y Leica, modelo Viva y System 900, para servicios en modo estático, en tiempo real y cinemático, con alta precisión, contamos con certificados de calibración, así también respetamos las Normas Técnicas del Instituto Geográfico Nacional para trabajos de alta precisión garantizando el 100% de certificación de todos nuestros puntos geodésicos rastreados.
+									.modal-footer
+										button.btn.btn-primary(type="button"  data-dismiss="modal") Salir
+
+
 				.col-md-3.col-sm-6.col-xs-12
 					.box
 						img(src="images/Equipos/EQPOSTPROCESO.png")
 						h4 Equip. Post - Proceso
-						a Ver Más(+)
+						button(type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong4") Ver Más(+)
+
+						#exampleModalLong4.modal.fade(tabindex="-1" role="dialog" aria-labelledby="#exampleModalLongTitle" aria-hidden="true")
+							.modal-dialog.modal-dialog-centered(role="document")
+								.modal-content
+									.modal-header
+										h5#exampleModalLongTitle.modal-title Equip. Post - Proceso
+										button.close(type="button" data-dismiss="modal" aria-label="Close")
+											span(aria-hidden="true") &times;
+									.modal-body
+										.container-fluid
+											.row
+												.col-md-12
+													img(src="images/Equipos/EQPOSTPROCESO.png")
+												.col-md-12
+													p GEOMINING S.A.C. cuenta con equipos GPS diferencial de las marcas Trimble, modelo R6 y Leica, modelo Viva y System 900, para servicios en modo estático, en tiempo real y cinemático, con alta precisión, contamos con certificados de calibración, así también respetamos las Normas Técnicas del Instituto Geográfico Nacional para trabajos de alta precisión garantizando el 100% de certificación de todos nuestros puntos geodésicos rastreados.
+									.modal-footer
+										button.btn.btn-primary(type="button"  data-dismiss="modal") Salir
 
 		#servicios
 			.container.text
 				h1.title-h1 Nuestros Servicios
+
 				.col-md-4.col-sm-6.col-xs-12
-					
+
 					.box
 						img(src="images/servicios/topo1.jpg")
 						h3 Topografía / Cartografía
@@ -148,63 +224,94 @@ html
 									.grid(style="max-width: 980px; width: 97%; margin: 100px auto;")
 										#js-filters-awesome-work.cbp-l-filters-work
 											.cbp-filter-item.cbp-filter-item-active(data-filter='*') TODOS
-											.cbp-filter-item(data-filter='.html') Topografia
+											.cbp-filter-item(data-filter='.carto') Cartografia
 												.cbp-filter-counter
-											.cbp-filter-item(data-filter='.jade') Mineria
+											.cbp-filter-item(data-filter='.topo') Topografía
 												.cbp-filter-counter
-											.cbp-filter-item(data-filter='.js') Catastro
+											.cbp-filter-item(data-filter='.foto') Fotogrametria
 												.cbp-filter-counter
-											.cbp-filter-item(data-filter='.dsg') Diseños
+											.cbp-filter-item(data-filter='.social') Social
 												.cbp-filter-counter
+											.cbp-filter-item(data-filter='.inter') Internacional
+												.cbp-filter-counter
+											.cbp-filter-item(data-filter='.integ') Intergración
+												.cbp-filter-counter
+											
+
+
 										#js-grid-awesome-work.cbp.cbp-l-grid-work
-											.cbp-item.html
+											.cbp-item.foto
 														.cbp-item-wrapper
-															a.cbp-caption.cbp-singlePage(href='https://sarita-coder.github.io/project8/', rel='nofollow')
+															a.cbp-caption.cbp-singlePage(href='https://sarita-coder.github.io/project1/', rel='nofollow')
 																.cbp-caption-defaultWrap
 																	img.wdt(src='images/Galerias/project1.jpg', alt='')
 																.cbp-caption-activeWrap
-															.cbp-l-grid-work-title Costa Verde
-															.cbp-l-grid-work-desc Primera semana.
-											.cbp-item.html
+															.cbp-l-grid-work-title Cesel Ingenieros
+															.cbp-l-grid-work-desc Tramo Tuberia de Gas.
+
+											.cbp-item.topo
+												.cbp-item-wrapper
+													a.cbp-caption.cbp-singlePage(href='https://sarita-coder.github.io/project2/', rel='nofollow')
+														.cbp-caption-defaultWrap
+															img.wdt(src='images/Galerias/project2.jpg', alt='')
+														.cbp-caption-activeWrap
+													.cbp-l-grid-work-title Villa El Salvador
+													.cbp-l-grid-work-desc Proyecto Arquitectura.
+
+											.cbp-item.social
+												.cbp-item-wrapper
+													a.cbp-caption.cbp-singlePage(href='https://sarita-coder.github.io/project3/', rel='nofollow')
+														.cbp-caption-defaultWrap
+															img.wdt(src='images/Galerias/project3.jpg', alt='')
+														.cbp-caption-activeWrap
+													.cbp-l-grid-work-title Navidad 2016
+													.cbp-l-grid-work-desc Ventanilla.
+
+											.cbp-item.foto
 												.cbp-item-wrapper
 													a.cbp-caption.cbp-singlePage(href='https://sarita-coder.github.io/project8/', rel='nofollow')
 														.cbp-caption-defaultWrap
-															img.wdt(src='images/Galerias/project1.jpg', alt='')
+															img.wdt(src='images/Galerias/project4.jpg', alt='')
 														.cbp-caption-activeWrap
-													.cbp-l-grid-work-title Sentient
-													.cbp-l-grid-work-desc Hackaton.
-											.cbp-item.html
+													.cbp-l-grid-work-title Electro Perú
+													.cbp-l-grid-work-desc Represa Tablachaca.
+
+											.cbp-item.inter
 												.cbp-item-wrapper
 													a.cbp-caption.cbp-singlePage(href='https://sarita-coder.github.io/project8/', rel='nofollow')
 														.cbp-caption-defaultWrap
-															img.wdt(src='images/Galerias/project1.jpg', alt='')
+															img.wdt(src='images/Galerias/project5.jpg', alt='')
 														.cbp-caption-activeWrap
-													.cbp-l-grid-work-title Primes
-													.cbp-l-grid-work-desc Segunda unidad.
-											.cbp-item.html
+													.cbp-l-grid-work-title Commercial UAV Expo - 2017
+													.cbp-l-grid-work-desc Las Vegas - EEUU.
+											
+											.cbp-item.topo
 												.cbp-item-wrapper
 													a.cbp-caption.cbp-singlePage(href='https://sarita-coder.github.io/project8/', rel='nofollow')
 														.cbp-caption-defaultWrap
-															img.wdt(src='images/Galerias/project1.jpg', alt='')
+															img.wdt(src='images/Galerias/project6.jpg', alt='')
 														.cbp-caption-activeWrap
-													.cbp-l-grid-work-title Flat theme
-													.cbp-l-grid-work-desc Proyecto (Segunda semana de Marzo).
-											.cbp-item.jade
+													.cbp-l-grid-work-title Ennel Perú
+													.cbp-l-grid-work-desc Red de Gas.
+
+											.cbp-item.carto
 												.cbp-item-wrapper
 													a.cbp-caption.cbp-singlePage(href='https://sarita-coder.github.io/project8/', rel='nofollow')
 														.cbp-caption-defaultWrap
-															img.wdt(src='images/Galerias/project1.jpg', alt='')
+															img.wdt(src='images/Galerias/project7.jpg', alt='')
 														.cbp-caption-activeWrap
-													.cbp-l-grid-work-title Agency Theme
-													.cbp-l-grid-work-desc Proyecto  (Última semana de Marzo).
-											.cbp-item.jade
+													.cbp-l-grid-work-title Calidda
+													.cbp-l-grid-work-desc Cartografia de Presición.
+
+											.cbp-item.integ
 												.cbp-item-wrapper
 													a.cbp-caption.cbp-singlePage(href='https://sarita-coder.github.io/project8/', rel='nofollow')
 														.cbp-caption-defaultWrap
-															img.wdt(src='images/Galerias/project1.jpg', alt='')
+															img.wdt(src='images/Galerias/project9.jpg', alt='')
 														.cbp-caption-activeWrap
-													.cbp-l-grid-work-title La República
-													.cbp-l-grid-work-desc Proyecto colaborativo.
+													.cbp-l-grid-work-title Equipo de Trabajo
+													.cbp-l-grid-work-desc Año Nuevo - 2016.
+
 										#js-loadMore-awesome-work.cbp-l-loadMore-button
 											a.cbp-l-loadMore-link(href='http://voxell.hol.es/project1/' rel="nofollow")
 												span.cbp-l-loadMore-defaultText MÁS PROYECTOS
@@ -215,11 +322,6 @@ html
 
 		#habilidades.habilidades
 			.container
-				h1.hab Nuestra Identidad
-				.col-md-6.col-sm-6.col-xs-12.animatedParent
-					.ds.gr.animated.rotateIn
-				.col-md-6.col-sm-6.col-xs-12.animatedParent
-					.ds.wb.animated.rotateIn
 
 
 		#contacto.contacto
@@ -237,13 +339,14 @@ html
 							a(href="#!") Av. los Olivos Mza. a Lote. 7 Asoc Villa el Amauta, SMP, Lima 31,Perú.
 						.siguenos
 							span Síguenos en: 
+							a(href="https://www.facebook.com/JEWJ-Contratistas-Generales-125853971269546/")
 								i.fa.fa-facebook.fa-2x.fp
-							a(href="#!")
+							a(href="https://www.linkedin.com/in/jorge-luis-ca%C3%B1azaca-vargas-14159a136/")
 								i.fa.fa-linkedin.fa-2x.fp
-							a(href="#!")
+							a(href="https://www.youtube.com/channel/UCu-11MpnfKN1_ZDU8EKQStA?disable_polymer=true")
 								i.fa.fa-youtube-play.fa-2x.fp
-							a(href="https://plus.google.com/u/0/109348762659589067279" target="_blank")
-								i.fa.fa-google-plus.fp
+							a(href="https://plus.google.com/u/0/114423434853652120809" target="_blank")
+								i.fa.fa-google-plus.fa-2x.fp
 
 				.col-md-6.mg-3em
 					.formulario
@@ -285,7 +388,7 @@ html
 						i.fa.fa-angle-double-up
 						span Arriba
 		include footer.jade
-	script(src='https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js')
+	script(src='http://code.jquery.com/jquery-1.11.2.min.js')
 	script(src='js/css3-animate-it.js')
 	script(src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js')
 	script(src='https://code.createjs.com/createjs-2015.11.26.min.js')
