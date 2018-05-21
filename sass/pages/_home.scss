@@ -7,8 +7,8 @@ font-weight: normal;
 font-style: normal;
 }
 
-::-moz-selection { color: white;  background: rgba(255, 68, 102, 0.63); }
-::selection      { color: white;  background: rgba(255, 68, 102, 0.63); }
+::-moz-selection { color: white;     background: rgba(68, 150, 255, 0.63); }
+::selection      { color: white;     background: rgba(68, 150, 255, 0.63); } 
 body::-webkit-scrollbar {
     width: 0.8em;
 }
@@ -31,11 +31,13 @@ body::-webkit-scrollbar-thumb {
 .navbar-inverse .navbar-nav > li > a {
     color: white;
     margin: 0px 6px;
+    font-weight: bold!important;
+
     &:hover{
-        color: $rosa;
+        color: yellow;
         background-color: transparent;
         text-shadow: 4px 3px 4px gray;
-        font-weigth:bold;
+        
     }
      &:focus{
         color: $rosa;
@@ -137,6 +139,110 @@ nav {
         font-size:9rem;
     }
 }
+
+///////
+.carousel-inner {
+
+    .item {
+        max-height: 680px;
+        &:after {
+            content: "";
+            background-color: rgba(0, 0, 0, .5);
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+        }
+    }
+
+}
+
+.carousel-control {
+    width: 10%;
+}
+
+.carousel-control .fa {
+    position: absolute;
+    top: 50%;
+    z-index: 5;
+    display: inline-block;
+
+    &.fa-chevron-right {
+        right: 50%;
+        margin-right: -10px;
+    }
+
+}
+
+
+
+/**
+ * Slider caption
+ */
+
+.carousel-caption {
+    
+    h2 {
+        margin:5% auto 20px;
+        color: #fff;
+        font-size: 70px;
+        text-align:center;
+        text-transform: uppercase;
+
+    }
+
+    p {
+        text-align:center;
+        font-family: "Oswald", sans-serif;
+        font-weight: 300;
+        font-size: 20px;
+        margin-bottom: 50px;
+    }
+    
+    @media screen and (min-width: 768px) {
+        right: 20%;
+        left: 20%;
+        bottom: 20%;
+    }
+
+}
+
+/**
+ * Button
+ */
+.btn-transparent {
+    background: transparent;
+    color: #fff;
+    border: 2px solid #fff;
+    &:hover {
+        background-color: #fff;
+    }
+ }
+
+.btn-rounded {
+    border-radius: 70px;
+}
+
+.btn-large {
+    padding: 11px 45px;
+    font-size: 18px;
+}
+
+/**
+ * Change animation duration
+ */
+.animated {
+    -webkit-animation-duration: 1.5s;
+    animation-duration: 1.5s;
+}
+
+
+
+
+
+
+
 /*principal*/
 .sanimate{
     position:fixed;
@@ -197,6 +303,27 @@ p{
 
 
 
+
+#Novedad{
+    background:url("../images/Novedad/novedad-3.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    //background-position: 50% 50%;
+    
+    
+    .text-novedad{
+        display:flex;
+        height:45rem;
+        justify-content: center;
+        align-items: center;
+            p{
+             color:white;
+                 text-shadow: 4px 3px 4px grey;
+            }
+        }
+}
+
 .opi{
     padding: 7% 0% 0%;
     background-color: #FFFFFF;
@@ -231,39 +358,172 @@ p{
         }
     }
 }
+
+.content-all{
+    //width:100%;
+    .content-img{
+        width:100%;
+        border:1px solid $rosa; 
+
+        position:relative;
+        overflow:hidden;
+        img{
+            width:100%;
+            height:32rem;
+        }
+        .content-1{
+            width:800px;
+            height:800px;
+            position:absolute;
+            top:0;
+            background:rgba(0,100,250,0.5);
+            -webkit-transform:rotate(-30deg);
+            transform:rotate(-30deg);
+            margin-left:-830px;
+            -webkit-transition:all 300ms;
+            transition:all 300ms;
+
+        }
+        .content-2{
+            width:800px;
+            height:800px;
+            position:absolute;
+            top:0;
+            background:rgba(0,100,250,0.5);
+            -webkit-transform:rotate(-30deg);
+            transform:rotate(-30deg);
+            margin-left:-800px;
+            -webkit-transition:all 500ms;
+            transition:all 500ms;
+
+        }
+        .content-3{
+            width:800px;
+            height:800px;
+            position:absolute;
+            top:0;
+            background:rgba(0,100,250,0.5);
+            -webkit-transform:rotate(30deg);
+            transform:rotate(30deg);
+            margin-left:-800px;
+            margin-top:-480px;
+            -webkit-transition:all 900ms;
+            transition:all 900ms;
+            -webkit-box-shadow:0px 1px 20px -5px black;
+            box-shadow:0px 1px 20px -5px black;
+
+        }
+        .content-4{
+            width:800px;
+            height:800px;
+            position:absolute;
+            top:0;
+            background:rgba(0,100,250,0.5);
+            transform:rotate(30deg);
+            margin-left:-830px;
+            margin-top:-480px;
+            -webkit-transition:all 700ms;
+            transition:all 700ms;
+        }
+
+    }
+
+}
+.content-img:hover{
+    border:none; 
+}
+.content-img:hover .content-1{
+    width:412%;
+    -webkit-transition:all 800ms;
+    transition:all 800ms;
+}
+.content-img:hover .content-1{
+    width:412%;
+    -webkit-transition:all 600ms;
+    transition:all 600ms;
+}
+.content-img:hover .content-2{
+    width:412%;
+    -webkit-transition:all 30ms;
+    transition:all 300ms;
+}
+.content-img:hover .content-3{
+    width:412%;
+    -webkit-transition:all 500ms;
+    transition:all 500ms;
+}
+.content-img:hover .content-4{
+    width:412%;
+    -webkit-transition:all 700ms;
+    transition:all 700ms;
+}
+.content-img:hover img{
+    -webkit-transform:scale(1.5);
+    transform:scale(1.5);
+    -webkit-transition:all 300ms;
+    transition:all 300ms;
+    opacity:0.8;
+}
+.content-txt{
+    position:absolute;
+    top:0;
+    width:60%;
+    padding:5px;
+    z-index:10;
+    color:white;
+    text-align:center;
+    margin: 5% auto 0;
+}
+.content-txt h4{
+    font-size:2.2em;
+    opacity:0;
+    -webkit-transform:scale(0.2);
+    transform:scale(0.2);
+    -webkit-transition:all 300ms;
+    transition:all 300ms;
+
+}
+.content-txt p{
+    font-size:10px;
+    opacity:0;
+   -webkit-transition:all 300ms;
+    transition:all 300ms;
+    -webkit-transform:scale(1.2);
+    ttransform:scale(1.2);
+    
+}
+.content-img:hover h4{
+    opacity:1;
+    -webkit-transition:all 300ms;
+    transition:all 300ms;
+    -webkit-transform:scale(0.7);
+    transform:scale(0.7);
+}
+.content-img:hover p{
+    opacity:1;
+    -webkit-transition:all 500ms;
+    transition:all 500ms;
+    -webkit-transform:scale(1);
+    transform:scale(1);
+}
+
 #equipos{
     padding:7% 0% 0%;
     h1{
-        color:$rosa;
+        color:$amarillo;
+        margin-bottom: 1.5em;
     }
-    .box{
-        padding: 4em 0em;
-        background: #ffa700;
-        margin: 4em 0em 4em;
-        img{
-            max-width: 80%;
-        }
-        a{
-            color:$rosa;
-        }
-        .modal-title{
-            WIDTH: calc(100% - 35px);
-            display: inline-block;
-        }
-        .btn-primary:hover{
-             background:$rosa;
-        }
-    }
+
 }
 #servicios{
     padding:7% 0% 7%; 
     .box{
         img{
             width:100%;
-            height:8em;
+            height:10em;
         }
         h3{
-          color:$rosa;  
+          color:$amarillo;  
         }
     }
     p{
@@ -271,43 +531,6 @@ p{
     }
 }
 
-.habilidades{
-    h1{
-        font-family: $mons;
-        font-weight: 700;
-        text-align: center;
-        color:$rosa;
-        padding: 20px 0px 45px;
-    }
-   .ds{
-        width: 100%;
-        height: 35em;
-    }
-    .gr{
-        background-image: url("../images/rueda1-01.svg");
-        background-repeat: no-repeat;
-        transition: all 0.5s ease-in-out;
-    }
-    .gr:hover{
-        background-image: url("../images/rueda2-02.svg");
-        background-repeat: no-repeat;
-        transition: all 0.5s ease-in-out;
-    }
-    .wb{
-        background-image: url("../images/rueda3-03.svg");
-        background-repeat: no-repeat;
-        transition: all 0.2s ease-in-out;
-    }
-    .wb:hover{
-        background-image: url("../images/rueda4-04.svg");
-        background-repeat: no-repeat;
-        transition: all 0.5s ease-in-out;
-    }
-    .gr, .gr:hover, .wb, .wb:hover{
-        background-size: 85%;
-        background-position-x: 20px;
-    }
-}
 
 
 .sobremip{

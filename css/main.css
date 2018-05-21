@@ -14,6 +14,9 @@
 .title-h1 {
   color: #ffbe00; }
 
+.title-h2 {
+  color: #0194f7; }
+
 .mg-3em {
   margin-top: 2em; }
 
@@ -29,11 +32,11 @@ p {
 
 ::-moz-selection {
   color: white;
-  background: rgba(255, 68, 102, 0.63); }
+  background: rgba(68, 150, 255, 0.63); }
 
 ::selection {
   color: white;
-  background: rgba(255, 68, 102, 0.63); }
+  background: rgba(68, 150, 255, 0.63); }
 
 body::-webkit-scrollbar {
   width: 0.8em; }
@@ -42,7 +45,7 @@ body::-webkit-scrollbar-track {
   -webkit-box-shadow: inset 6px 104px 66px black; }
 
 body::-webkit-scrollbar-thumb {
-  background-color: #01c1f7;
+  background-color: #0194f7;
   outline: #ff4466;
   border-radius: 50px; }
 
@@ -53,14 +56,14 @@ body::-webkit-scrollbar-thumb {
 
 .navbar-inverse .navbar-nav > li > a {
   color: white;
-  margin: 0px 6px; }
+  margin: 0px 6px;
+  font-weight: bold !important; }
   .navbar-inverse .navbar-nav > li > a:hover {
-    color: #01c1f7;
+    color: yellow;
     background-color: transparent;
-    text-shadow: 4px 3px 4px gray;
-    font-weigth: bold; }
+    text-shadow: 4px 3px 4px gray; }
   .navbar-inverse .navbar-nav > li > a:focus {
-    color: #01c1f7;
+    color: #0194f7;
     background-color: transparent; }
 
 .navbar-brand {
@@ -70,7 +73,7 @@ body::-webkit-scrollbar-thumb {
   transition: all 1.8s ease-in-out; }
 
 #menu.active {
-  background-color: #01c1f7;
+  background-color: #0194f7;
   padding: 0px 0px 6px;
   webkit-transform: translateY(0);
   -moz-transform: translateY(0);
@@ -107,7 +110,7 @@ nav {
     font-size: 0.9em;
     color: white;
     margin: 0% 3%;
-    font-family: "LubalinGraphStdBook";
+    font-family: "Muli";
     font-size: 18px; }
     nav a:hover {
       color: #0DC0C0; }
@@ -151,6 +154,76 @@ nav {
   left: 10% !important; }
   .carousel-caption h1 {
     font-size: 9rem; }
+
+.carousel-inner .item {
+  max-height: 680px; }
+  .carousel-inner .item:after {
+    content: "";
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0; }
+
+.carousel-control {
+  width: 10%; }
+
+.carousel-control .fa {
+  position: absolute;
+  top: 50%;
+  z-index: 5;
+  display: inline-block; }
+  .carousel-control .fa.fa-chevron-right {
+    right: 50%;
+    margin-right: -10px; }
+
+/**
+ * Slider caption
+ */
+.carousel-caption h2 {
+  margin: 5% auto 20px;
+  color: #fff;
+  font-size: 70px;
+  text-align: center;
+  text-transform: uppercase; }
+
+.carousel-caption p {
+  text-align: center;
+  font-family: "Oswald", sans-serif;
+  font-weight: 300;
+  font-size: 20px;
+  margin-bottom: 50px; }
+
+@media screen and (min-width: 768px) {
+  .carousel-caption {
+    right: 20%;
+    left: 20%;
+    bottom: 20%; } }
+
+/**
+ * Button
+ */
+.btn-transparent {
+  background: transparent;
+  color: #fff;
+  border: 2px solid #fff; }
+  .btn-transparent:hover {
+    background-color: #fff; }
+
+.btn-rounded {
+  border-radius: 70px; }
+
+.btn-large {
+  padding: 11px 45px;
+  font-size: 18px; }
+
+/**
+ * Change animation duration
+ */
+.animated {
+  -webkit-animation-duration: 1.5s;
+  animation-duration: 1.5s; }
 
 /*principal*/
 .sanimate {
@@ -198,10 +271,30 @@ nav {
       transition: all 0.3s ease-in-out; }
 
 p {
-  font-family: "LubalinGraphStdBook"; }
+  font-family: "Muli"; }
 
 .messages-1 {
   margin: 7em; }
+
+#Novedad {
+  background: url("../images/Novedad/novedad-3.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover; }
+  #Novedad .text-novedad {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 45rem;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
+    #Novedad .text-novedad p {
+      color: white;
+      text-shadow: 4px 3px 4px grey; }
 
 .opi {
   padding: 7% 0% 0%;
@@ -216,7 +309,7 @@ p {
     font-family: "Montserrat";
     font-weight: 700;
     text-align: center;
-    color: #01c1f7; }
+    color: #0194f7; }
   .opi p {
     text-align: justify;
     font-size: 17.5px;
@@ -231,76 +324,176 @@ p {
       .opi .texto img:nth-child(2) {
         margin-left: 9px; }
 
+.content-all .content-img {
+  width: 100%;
+  border: 1px solid #0194f7;
+  position: relative;
+  overflow: hidden; }
+  .content-all .content-img img {
+    width: 100%;
+    height: 32rem; }
+  .content-all .content-img .content-1 {
+    width: 800px;
+    height: 800px;
+    position: absolute;
+    top: 0;
+    background: rgba(0, 100, 250, 0.5);
+    -webkit-transform: rotate(-30deg);
+    -ms-transform: rotate(-30deg);
+    transform: rotate(-30deg);
+    margin-left: -830px;
+    -webkit-transition: all 300ms;
+    -o-transition: all 300ms;
+    transition: all 300ms; }
+  .content-all .content-img .content-2 {
+    width: 800px;
+    height: 800px;
+    position: absolute;
+    top: 0;
+    background: rgba(0, 100, 250, 0.5);
+    -webkit-transform: rotate(-30deg);
+    -ms-transform: rotate(-30deg);
+    transform: rotate(-30deg);
+    margin-left: -800px;
+    -webkit-transition: all 500ms;
+    -o-transition: all 500ms;
+    transition: all 500ms; }
+  .content-all .content-img .content-3 {
+    width: 800px;
+    height: 800px;
+    position: absolute;
+    top: 0;
+    background: rgba(0, 100, 250, 0.5);
+    -webkit-transform: rotate(30deg);
+    -ms-transform: rotate(30deg);
+    transform: rotate(30deg);
+    margin-left: -800px;
+    margin-top: -480px;
+    -webkit-transition: all 900ms;
+    -o-transition: all 900ms;
+    transition: all 900ms;
+    -webkit-box-shadow: 0px 1px 20px -5px black;
+    box-shadow: 0px 1px 20px -5px black; }
+  .content-all .content-img .content-4 {
+    width: 800px;
+    height: 800px;
+    position: absolute;
+    top: 0;
+    background: rgba(0, 100, 250, 0.5);
+    -webkit-transform: rotate(30deg);
+    -ms-transform: rotate(30deg);
+    transform: rotate(30deg);
+    margin-left: -830px;
+    margin-top: -480px;
+    -webkit-transition: all 700ms;
+    -o-transition: all 700ms;
+    transition: all 700ms; }
+
+.content-img:hover {
+  border: none; }
+
+.content-img:hover .content-1 {
+  width: 412%;
+  -webkit-transition: all 800ms;
+  -o-transition: all 800ms;
+  transition: all 800ms; }
+
+.content-img:hover .content-1 {
+  width: 412%;
+  -webkit-transition: all 600ms;
+  -o-transition: all 600ms;
+  transition: all 600ms; }
+
+.content-img:hover .content-2 {
+  width: 412%;
+  -webkit-transition: all 30ms;
+  -webkit-transition: all 300ms;
+  -o-transition: all 300ms;
+  transition: all 300ms; }
+
+.content-img:hover .content-3 {
+  width: 412%;
+  -webkit-transition: all 500ms;
+  -o-transition: all 500ms;
+  transition: all 500ms; }
+
+.content-img:hover .content-4 {
+  width: 412%;
+  -webkit-transition: all 700ms;
+  -o-transition: all 700ms;
+  transition: all 700ms; }
+
+.content-img:hover img {
+  -webkit-transform: scale(1.5);
+  -ms-transform: scale(1.5);
+  transform: scale(1.5);
+  -webkit-transition: all 300ms;
+  -o-transition: all 300ms;
+  transition: all 300ms;
+  opacity: 0.8; }
+
+.content-txt {
+  position: absolute;
+  top: 0;
+  width: 60%;
+  padding: 5px;
+  z-index: 10;
+  color: white;
+  text-align: center;
+  margin: 5% auto 0; }
+
+.content-txt h4 {
+  font-size: 2.2em;
+  opacity: 0;
+  -webkit-transform: scale(0.2);
+  -ms-transform: scale(0.2);
+  transform: scale(0.2);
+  -webkit-transition: all 300ms;
+  -o-transition: all 300ms;
+  transition: all 300ms; }
+
+.content-txt p {
+  font-size: 10px;
+  opacity: 0;
+  -webkit-transition: all 300ms;
+  -o-transition: all 300ms;
+  transition: all 300ms;
+  -webkit-transform: scale(1.2);
+  ttransform: scale(1.2); }
+
+.content-img:hover h4 {
+  opacity: 1;
+  -webkit-transition: all 300ms;
+  -o-transition: all 300ms;
+  transition: all 300ms;
+  -webkit-transform: scale(0.7);
+  -ms-transform: scale(0.7);
+  transform: scale(0.7); }
+
+.content-img:hover p {
+  opacity: 1;
+  -webkit-transition: all 500ms;
+  -o-transition: all 500ms;
+  transition: all 500ms;
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1); }
+
 #equipos {
   padding: 7% 0% 0%; }
   #equipos h1 {
-    color: #01c1f7; }
-  #equipos .box {
-    padding: 4em 0em;
-    background: #ffa700;
-    margin: 4em 0em 4em; }
-    #equipos .box img {
-      max-width: 80%; }
-    #equipos .box a {
-      color: #01c1f7; }
-    #equipos .box .modal-title {
-      WIDTH: calc(100% - 35px);
-      display: inline-block; }
-    #equipos .box .btn-primary:hover {
-      background: #01c1f7; }
+    color: #ffbe00;
+    margin-bottom: 1.5em; }
 
 #servicios {
   padding: 7% 0% 7%; }
   #servicios .box img {
     width: 100%;
-    height: 8em; }
+    height: 10em; }
   #servicios .box h3 {
-    color: #01c1f7; }
+    color: #ffbe00; }
   #servicios p {
     text-align: justify; }
-
-.habilidades h1 {
-  font-family: "Montserrat";
-  font-weight: 700;
-  text-align: center;
-  color: #01c1f7;
-  padding: 20px 0px 45px; }
-
-.habilidades .ds {
-  width: 100%;
-  height: 35em; }
-
-.habilidades .gr {
-  background-image: url("../images/rueda1-01.svg");
-  background-repeat: no-repeat;
-  -webkit-transition: all 0.5s ease-in-out;
-  -o-transition: all 0.5s ease-in-out;
-  transition: all 0.5s ease-in-out; }
-
-.habilidades .gr:hover {
-  background-image: url("../images/rueda2-02.svg");
-  background-repeat: no-repeat;
-  -webkit-transition: all 0.5s ease-in-out;
-  -o-transition: all 0.5s ease-in-out;
-  transition: all 0.5s ease-in-out; }
-
-.habilidades .wb {
-  background-image: url("../images/rueda3-03.svg");
-  background-repeat: no-repeat;
-  -webkit-transition: all 0.2s ease-in-out;
-  -o-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out; }
-
-.habilidades .wb:hover {
-  background-image: url("../images/rueda4-04.svg");
-  background-repeat: no-repeat;
-  -webkit-transition: all 0.5s ease-in-out;
-  -o-transition: all 0.5s ease-in-out;
-  transition: all 0.5s ease-in-out; }
-
-.habilidades .gr, .habilidades .gr:hover, .habilidades .wb, .habilidades .wb:hover {
-  background-size: 85%;
-  background-position-x: 20px; }
 
 .sobremip {
   font-family: "Montserrat";
@@ -319,8 +512,8 @@ p {
   color: white; }
 
 .cbp-l-grid-work-title {
-  color: #01c1f7 !important;
-  font-family: "LubalinGraphStdBook" !important; }
+  color: #0194f7 !important;
+  font-family: "Muli" !important; }
 
 /*.habilidades{
     position: relative;
@@ -387,7 +580,7 @@ p {
     background: white;
     font-weight: bold; }
     .btnpost button:hover {
-      background: #01c1f7;
+      background: #0194f7;
       color: black; }
 
 .text-mail {
@@ -413,7 +606,7 @@ p {
       color: white;
       font-size: 1.5rem; }
       .icon-contacto li a:hover {
-        color: #01c1f7; }
+        color: #0194f7; }
   .icon-contacto span {
     color: white;
     margin-left: 5rem;
@@ -426,18 +619,18 @@ p {
     .icon-contacto .siguenos a i {
       color: white; }
       .icon-contacto .siguenos a i:hover {
-        color: #01c1f7; }
+        color: #0194f7; }
 
 .mapa iframe {
   width: 100%; }
 
 input {
-  color: #01c1f7;
+  color: #0194f7;
   font-size: 1.8rem !important;
-  border-bottom: 1px solid #01c1f7; }
+  border-bottom: 1px solid #0194f7; }
 
 input:hover, input:focus {
-  border-bottom: 1px solid #01c1f7 !important; }
+  border-bottom: 1px solid #0194f7 !important; }
 
 ::-webkit-input-placeholder {
   color: #9FA1A4;
@@ -456,7 +649,7 @@ input:hover, input:focus {
   color: #9FA1A4; }
 
 footer {
-  background-color: #01c1f7;
+  background-color: #0194f7;
   padding: 1em 0em;
   color: white; }
 
@@ -525,11 +718,11 @@ footer .txt-al {
   color: #8E8D8D; }
 
 .cbp-l-project-title {
-  color: #01c1f7 !important; }
+  color: #0194f7 !important; }
 
 .cbp-l-project-subtitle {
   color: #8E8D8D !important;
-  font-family: "LubalinGraphStdBook" !important; }
+  font-family: "Muli" !important; }
 
 .viewmore {
   -webkit-box-pack: center;
@@ -548,15 +741,15 @@ footer .txt-al {
     line-height: 30px; }
   .viewmore .btn-default:hover, .viewmore .btn-default:focus, .viewmore .btn-default:active, .viewmore .btn-default:active:hover, .viewmore .btn-default:active:focus, .viewmore .btn-default:active.focus, .viewmore .btn-default.active:hover, .viewmore .btn-default.active:focus, .viewmore .btn-default.active.focus, .viewmore .open > .btn-default.dropdown-toggle:hover, .viewmore .open > .btn-default.dropdown-toggle:focus, .viewmore .open > .btn-default.dropdown-toggle.focus {
     color: white;
-    background-color: #01c1f7;
-    border-color: #01c1f7;
+    background-color: #0194f7;
+    border-color: #0194f7;
     -webkit-transition: all 0.4s ease-in-out;
     -o-transition: all 0.4s ease-in-out;
     transition: all 0.4s ease-in-out; }
   .viewmore .btn-default {
-    color: #01c1f7;
+    color: #0194f7;
     background-color: white;
-    border-color: #01c1f7;
+    border-color: #0194f7;
     margin: 5em 0em; }
 
 .farriba {
@@ -568,7 +761,7 @@ footer .txt-al {
 .arriba {
   color: white;
   font-size: 20px;
-  background-color: #01c1f7;
+  background-color: #0194f7;
   border-radius: 50px;
   width: 50px;
   height: 50px;
@@ -592,15 +785,15 @@ footer .txt-al {
   align-items: center; }
   .cv1 .btn-default:hover, .cv1 .btn-default:focus, .cv1 .btn-default:active, .cv1 .btn-default:active:hover, .cv1 .btn-default:active:focus, .cv1 .btn-default:active.focus, .cv1 .btn-default.active:hover, .cv1 .btn-default.active:focus, .cv1 .btn-default.active.focus, .cv1 .open > .btn-default.dropdown-toggle:hover, .cv1 .open > .btn-default.dropdown-toggle:focus, .cv1 .open > .btn-default.dropdown-toggle.focus {
     color: white;
-    background-color: #01c1f7;
-    border-color: #01c1f7;
+    background-color: #0194f7;
+    border-color: #0194f7;
     -webkit-transition: all 0.4s ease-in-out;
     -o-transition: all 0.4s ease-in-out;
     transition: all 0.4s ease-in-out; }
   .cv1 .btn-default {
-    color: #01c1f7;
+    color: #0194f7;
     background-color: transparent;
-    border-color: #01c1f7;
+    border-color: #0194f7;
     margin: 3em 0em;
     font-size: 1.2em; }
   .cv1 span {
@@ -623,6 +816,17 @@ footer .txt-al {
 h6 {
   font-family: "Montserrat";
   font-size: 15px; }
+
+@media screen and (min-width: 768px) {
+  .carousel-control .fa {
+    width: 30px;
+    height: 30px;
+    margin-top: -15px;
+    font-size: 30px; } }
+
+@media screen and (min-width: 768px) {
+  .carousel-control .fa-chevron-left {
+    margin-left: -15px; } }
 
 @media (max-width: 767px) {
   canvas {
