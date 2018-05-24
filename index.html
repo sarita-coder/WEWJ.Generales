@@ -343,21 +343,21 @@
         </div>
         <div class="col-md-6 mg-3em">
           <div class="formulario">
-            <form name="form1" id="form1" action="" method="POST" onsubmit="return false">
+            <form name="email_form" id="email_form" method="post" onsubmit="return false" action="mensajero.php">
               <div class="form-group">
-                <input class="form-control only_letters" type="text" placeholder="Nombre y apellidos" name="apenom2" id="apenom2" maxlength="250"><span>*</span>
+                <input class="form-control only_letters" type="text" maxlength="250" placeholder="Nombre y apellidos" name="nombre" id="apenom2" required="required"><span>*</span>
               </div>
               <div class="form-group">
-                <input class="form-control" type="text" placeholder="Empresa" name="enterprise" id="enterprise" maxlength="250"><span>*</span>
+                <input class="form-control" type="text" maxlength="250" placeholder="Empresa" name="empresa" value="" id="enterprise" required="required"><span>*</span>
               </div>
               <div class="form-group">
-                <input class="form-control" type="text" placeholder="Correo electrónico" name="email2" id="email2" maxlength="250"><span>*</span>
+                <input class="form-control" type="email" placeholder="Correo electrónico" name="email2" id="email2" maxlength="250" title="Introduzca un correo electrónico" required="required"><span>*</span>
               </div>
               <div class="form-group">
-                <input class="form-control" type="text" placeholder="Requerimiento" name="request" id="request" maxlength="500"><span class="carac">500 car.</span>
+                <input class="form-control" type="text" placeholder="Requerimiento" name="mensaje" id="request" required="required" maxlength="500"><span class="carac">500 car.</span>
               </div>
               <div class="form-group">
-                <input class="form-control only_phone" type="text" placeholder="Teléfono / Celular" name="phone2" id="phone2" maxlength="40"><span>*</span>
+                <input class="form-control only_phone" type="tel" pattern="[0-9]{9}" placeholder="Teléfono / Celular" name="telefono" id="phone2" maxlength="40"><span>*</span>
               </div>
               <div class="btnpost"><span class="info-obli">* Información obligatoria</span>
                 <button class="btn" type="submit" name="btnsend" id="btnsend" value="ENVIAR">Enviar</button>

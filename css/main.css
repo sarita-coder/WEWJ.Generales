@@ -695,6 +695,15 @@ footer {
 .mg-3 {
   margin-top: 4em; }
 
+.form-group {
+  position: relative; }
+  .form-group span {
+    color: #444;
+    font-size: 2rem;
+    position: absolute;
+    right: 20px;
+    top: 6px; }
+
 footer a {
   PADDING: 0% 2%;
   color: white;
