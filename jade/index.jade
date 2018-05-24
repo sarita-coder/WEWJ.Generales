@@ -329,21 +329,21 @@ html
 
 				.col-md-6.mg-3em
 					.formulario
-						form(name="email_form" id="email_form" action="" method="post" onsubmit="return false" action="mensajero.php" )
+						form(name="email_form" id="email_form"  method="post" onsubmit="return false" action="mensajero.php" )
 							.form-group
-								input(type="text" class="form-control" placeholder="Nombre y apellidos" name="nombre" id="apenom2" required="required" maxlength="250" class="only_letters")
+								input(type="text" class="form-control"  maxlength="250" placeholder="Nombre y apellidos" name="nombre" id="apenom2" required="required"  class="only_letters")
 								span *
 							.form-group
-								input(type="text" class="form-control" placeholder="Empresa" name="empresa"  value="" id="enterprise"  required="required" maxlength="250")
+								input(type="text"  maxlength="250" class="form-control" placeholder="Empresa" name="empresa"  value="" id="enterprise"  required="required" )
 								span *
 							.form-group
-								input(type="text" class="form-control" placeholder="Correo electrónico"  name="email2" id="email2" maxlength="250" title="Introduzca un correo electrónico" required="required" maxlength="250")
+								input(type="email" class="form-control" placeholder="Correo electrónico"  name="email2" id="email2" maxlength="250" title="Introduzca un correo electrónico" required="required" )
 								span *
 							.form-group
-								input(type="text" class="form-control" placeholder="Requerimiento" name="mensaje" id="request"  required="required"maxlength="500" )
+								input(type="text" class="form-control" placeholder="Requerimiento" name="mensaje" id="request"  required="required" maxlength="500" )
 								span.carac 500 car.
 							.form-group
-								input(type="text" class="form-control" placeholder="Teléfono / Celular" name="telefono" id="phone2" maxlength="40" class="only_phone")
+								input(type="tel" pattern="[0-9]{9}" class="form-control" placeholder="Teléfono / Celular" name="telefono" id="phone2" maxlength="40" class="only_phone")
 								span *
 							
 							.btnpost
