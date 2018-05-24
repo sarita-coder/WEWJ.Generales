@@ -23,6 +23,9 @@
 p {
   font-family: "Montserrat" !important; }
 
+.mg-left-0 {
+  margin-left: 0 !important; }
+
 @font-face {
   font-family: 'LubalinGraphStdBook';
   src: url("../fonts/LubalinGraphStd-Book.otf");
@@ -597,6 +600,7 @@ p {
 .icon-contacto {
   margin-top: 20px; }
   .icon-contacto li {
+    list-style: none;
     padding-left: 40px;
     line-height: 30px;
     margin-bottom: 30px;
@@ -606,6 +610,8 @@ p {
       font-size: 1.5rem; }
       .icon-contacto li a:hover {
         color: #0194f7; }
+      .icon-contacto li a .style-span {
+        font-size: 1.5rem; }
   .icon-contacto span {
     color: white;
     margin-left: 5rem;
@@ -688,6 +694,9 @@ footer {
       text-decoration: none; }
   .contacto .fp {
     padding-right: 15px; }
+
+.spacio {
+  display: none; }
 
 .grid {
   margin-top: 5px !important; }
@@ -837,14 +846,24 @@ h6 {
     margin-left: -15px; } }
 
 @media (max-width: 767px) {
+  .icon-contacto {
+    padding-left: 0; }
+    .icon-contacto li {
+      list-style: none; }
+  .messages-1 {
+    margin: 0em; }
   .carousel-caption h2 {
     font-size: 2rem; }
   .carousel-caption p {
     font-size: 1.3rem;
     margin-bottom: 10px; }
     .carousel-caption p .btn-brochure {
-      font-size: 1.2rem;
+      font-size: 1.1rem;
       padding: 5px 10px; }
+  .email-form span {
+    font-size: 1.4rem; }
+  .email-form .spacio {
+    display: inline-block; }
   canvas {
     margin-top: 19em;
     width: 60% !important; }
