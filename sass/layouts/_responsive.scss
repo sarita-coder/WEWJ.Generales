@@ -24,6 +24,16 @@
 
 @media (max-width: 767px){
 
+	.icon-contacto {
+   	 	padding-left: 0;
+   	 	li{
+   	 		list-style: none;
+   	 	}
+	}
+	.messages-1 {
+    margin: 0em;
+	}
+
 	.carousel-caption{
 		h2{
 			font-size: 2rem;
@@ -32,13 +42,20 @@
 			font-size: 1.3rem;
 			margin-bottom:10px;
 			.btn-brochure{
-				font-size: 1.2rem;
+				font-size: 1.1rem;
 				padding:5px 10px;
 				
 				}
 		} 
 	}
-
+	.email-form{
+		span{
+			font-size: 1.4rem;
+		}
+		.spacio{
+			display:inline-block;
+		}
+	}
 		
 
 
