@@ -26,6 +26,9 @@ p {
 .mg-left-0 {
   margin-left: 0 !important; }
 
+.txt-center {
+  text-align: center; }
+
 @font-face {
   font-family: 'LubalinGraphStdBook';
   src: url("../fonts/LubalinGraphStd-Book.otf");
@@ -331,12 +334,13 @@ p {
   overflow: hidden; }
   .content-all .content-img img {
     width: 100%;
-    height: 32rem; }
-  .content-all .content-img .content-1 {
+    height: 42rem; }
+  .content-all .content-img .content-resp {
     width: 800px;
     height: 800px;
     position: absolute;
-    top: 0;
+    top: 0; }
+  .content-all .content-img .content-1 {
     background: rgba(0, 100, 250, 0.5);
     -webkit-transform: rotate(-30deg);
     -ms-transform: rotate(-30deg);
@@ -346,10 +350,6 @@ p {
     -o-transition: all 300ms;
     transition: all 300ms; }
   .content-all .content-img .content-2 {
-    width: 800px;
-    height: 800px;
-    position: absolute;
-    top: 0;
     background: rgba(0, 100, 250, 0.5);
     -webkit-transform: rotate(-30deg);
     -ms-transform: rotate(-30deg);
@@ -359,32 +359,24 @@ p {
     -o-transition: all 500ms;
     transition: all 500ms; }
   .content-all .content-img .content-3 {
-    width: 800px;
-    height: 800px;
-    position: absolute;
-    top: 0;
     background: rgba(0, 100, 250, 0.5);
     -webkit-transform: rotate(30deg);
     -ms-transform: rotate(30deg);
     transform: rotate(30deg);
-    margin-left: -800px;
-    margin-top: -480px;
+    margin-left: -780px;
+    margin-top: -450px;
     -webkit-transition: all 900ms;
     -o-transition: all 900ms;
     transition: all 900ms;
     -webkit-box-shadow: 0px 1px 20px -5px black;
     box-shadow: 0px 1px 20px -5px black; }
   .content-all .content-img .content-4 {
-    width: 800px;
-    height: 800px;
-    position: absolute;
-    top: 0;
     background: rgba(0, 100, 250, 0.5);
     -webkit-transform: rotate(30deg);
     -ms-transform: rotate(30deg);
     transform: rotate(30deg);
-    margin-left: -830px;
-    margin-top: -480px;
+    margin-left: -750px;
+    margin-top: -450px;
     -webkit-transition: all 700ms;
     -o-transition: all 700ms;
     transition: all 700ms; }
@@ -480,6 +472,7 @@ p {
   transform: scale(1); }
 
 #equipos {
+  min-height: 100vh;
   padding: 7% 0% 0%; }
   #equipos h1 {
     color: #ffbe00;
@@ -515,29 +508,7 @@ p {
   color: #0194f7 !important;
   font-family: "Muli" !important; }
 
-/*.habilidades{
-    position: relative;
-    width: 100%;
-    overflow: hidden;
-    height: 100%;
-}
-.habilidades:after{
-    top: 0;
-    display: block;
-    content: "";
-    position: absolute;
-    z-index: 1;
-    pointer-events: none;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    border-top: 194px solid #edbf32;
-    border-right: 3000px solid transparent;
-}
+/*
 */
 .form {
   position: relative; }
@@ -601,7 +572,7 @@ p {
     list-style: none;
     padding-left: 40px;
     line-height: 30px;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     background-repeat: no-repeat; }
     .icon-contacto li a {
       color: white;
@@ -899,9 +870,6 @@ h6 {
     .carousel-caption p .btn-brochure {
       font-size: 1.2rem;
       padding: 5px 10px; }
-  canvas {
-    margin-top: 19em;
-    width: 60% !important; }
   .navbar-nav {
     -webkit-transform: translateX(0%);
     -ms-transform: translateX(0%);
@@ -1093,6 +1061,21 @@ h6 {
     font-size: 1em; }
   .cbp-item {
     width: 100% !important; }
+  .content-all .content-img img {
+    height: 22rem !important; }
+  .content-resp {
+    width: 800px !important;
+    height: 800px !important;
+    position: absolute !important;
+    top: 0 !important; }
+  .icon-contacto {
+    padding-left: 0px; }
+    .icon-contacto li a {
+      font-size: 1.1rem; }
+    .icon-contacto .text-mail, .icon-contacto .text-map {
+      display: none; }
+  .brochure-footer {
+    font-size: 1.3rem; }
   footer {
     text-align: center; }
     footer h6 {
