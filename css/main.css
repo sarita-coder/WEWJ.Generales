@@ -157,16 +157,14 @@ nav {
   .carousel-caption h1 {
     font-size: 9rem; }
 
-.carousel-inner .item {
-  max-height: 680px; }
-  .carousel-inner .item:after {
-    content: "";
-    background-color: rgba(0, 0, 0, 0.5);
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0; }
+.carousel-inner .item:after {
+  content: "";
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0; }
 
 .carousel-control {
   width: 10%; }
@@ -834,6 +832,10 @@ h6 {
   font-family: "Montserrat";
   font-size: 15px; }
 
+@media screen and (min-width: 1199px) {
+  .carousel-inner .item {
+    max-height: 100vh; } }
+
 @media screen and (min-width: 768px) {
   .carousel-control .fa {
     width: 30px;
@@ -845,25 +847,58 @@ h6 {
   .carousel-control .fa-chevron-left {
     margin-left: -15px; } }
 
+@media (min-width: 991px) and (max-width: 1199px) {
+  .navbar-nav {
+    -webkit-transform: translateX(-8em);
+    -ms-transform: translateX(-8em);
+    transform: translateX(-8em);
+    -webkit-transition: all 0.8s ease-in-out;
+    -o-transition: all 0.8s ease-in-out;
+    transition: all 0.8s ease-in-out; }
+  .gr, .gr:hover, .wb, .wb:hover {
+    background-size: 80%; }
+  .ds {
+    height: 28em; }
+  .cbp-item {
+    width: 50% !important; } }
+
+@media (min-width: 768px) and (max-width: 991px) {
+  canvas {
+    margin-top: 22em;
+    width: 45%; }
+  .navbar-nav {
+    -webkit-transform: translateX(-2.5em);
+    -ms-transform: translateX(-2.5em);
+    transform: translateX(-2.5em);
+    -webkit-transition: all 0.8s ease-in-out;
+    -o-transition: all 0.8s ease-in-out;
+    transition: all 0.8s ease-in-out; }
+  .gr, .gr:hover, .wb, .wb:hover {
+    background-size: 82%; }
+  .habilidades .ds {
+    height: 21em; }
+  .cbp-item {
+    width: 100% !important; }
+  .cbp-item {
+    width: 50% !important; }
+  footer {
+    text-align: center; }
+    footer .txt-al {
+      text-align: center; }
+  .carousel-caption h2 {
+    font-size: 5rem; }
+  .carousel-caption p {
+    font-size: 2rem; } }
+
 @media (max-width: 767px) {
-  .icon-contacto {
-    padding-left: 0; }
-    .icon-contacto li {
-      list-style: none; }
-  .messages-1 {
-    margin: 0em; }
   .carousel-caption h2 {
     font-size: 2rem; }
   .carousel-caption p {
     font-size: 1.3rem;
     margin-bottom: 10px; }
     .carousel-caption p .btn-brochure {
-      font-size: 1.1rem;
+      font-size: 1.2rem;
       padding: 5px 10px; }
-  .email-form span {
-    font-size: 1.4rem; }
-  .email-form .spacio {
-    display: inline-block; }
   canvas {
     margin-top: 19em;
     width: 60% !important; }
@@ -1064,46 +1099,3 @@ h6 {
       text-align: center; }
     footer .txt-al {
       text-align: center; } }
-
-@media (min-width: 768px) and (max-width: 991px) {
-  canvas {
-    margin-top: 22em;
-    width: 45%; }
-  .navbar-nav {
-    -webkit-transform: translateX(-2.5em);
-    -ms-transform: translateX(-2.5em);
-    transform: translateX(-2.5em);
-    -webkit-transition: all 0.8s ease-in-out;
-    -o-transition: all 0.8s ease-in-out;
-    transition: all 0.8s ease-in-out; }
-  .gr, .gr:hover, .wb, .wb:hover {
-    background-size: 82%; }
-  .habilidades .ds {
-    height: 21em; }
-  .cbp-item {
-    width: 100% !important; }
-  .cbp-item {
-    width: 50% !important; }
-  footer {
-    text-align: center; }
-    footer .txt-al {
-      text-align: center; }
-  .carousel-caption h2 {
-    font-size: 5rem; }
-  .carousel-caption p {
-    font-size: 2rem; } }
-
-@media (min-width: 991px) and (max-width: 1199px) {
-  .navbar-nav {
-    -webkit-transform: translateX(-8em);
-    -ms-transform: translateX(-8em);
-    transform: translateX(-8em);
-    -webkit-transition: all 0.8s ease-in-out;
-    -o-transition: all 0.8s ease-in-out;
-    transition: all 0.8s ease-in-out; }
-  .gr, .gr:hover, .wb, .wb:hover {
-    background-size: 80%; }
-  .ds {
-    height: 28em; }
-  .cbp-item {
-    width: 50% !important; } }
