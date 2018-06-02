@@ -63,17 +63,17 @@
 					$nombre=$_POST['nombre'];
 					$empresa=$_POST['empresa'];
 					$email2=$_POST['email2'];
-					$email="comunicaciones@vooxell.com";
+					$email="sarita.roman.colonio@gmail.com";
 					$mensaje=$_POST['mensaje'];
 					$telefono=$_POST['telefono'];	
 					$titulo="Mensaje de la web página vooxell";
 					$contenido=
 					'<html>
 						<head>
-							<title>Correo de Página de vooxell.com </title>
+							<title> Correo de Página de JEWJContratistas.com.pe </title>
 						</head>
 						<body>
-							<h1>Haz recibido un mensaje de la web vooxell.com</h1>
+							<h1>Haz recibido un mensaje de la web JEWJContratistas.com.pe </h1>
 							<p>Sr(a). <strong> '.$nombre.'</strong>, de la empresa: '.$empresa.'</p>
 							</p> te ha enviado el siguiente mensaje:</p>
 							<p>Mensaje: '.$mensaje.'</p>

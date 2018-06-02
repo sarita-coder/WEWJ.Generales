@@ -142,7 +142,7 @@ nav {
 .carousel-inner {
 
     .item {
-        max-height: 680px;
+
         &:after {
             content: "";
             background-color: rgba(0, 0, 0, .5);
@@ -907,3 +907,4 @@ h6{
     font-family: $mons;
     font-size: 15px;
 }
+    
